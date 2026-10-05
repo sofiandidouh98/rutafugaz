@@ -1,6 +1,7 @@
 ---
 title: "Áreas de Serviço para Autocaravanas em Espanha: Guia Completo de Serviços, Preços e Regras (2026)"
-description: "Áreas de autocaravanas em Espanha: diferença face ao parque de campismo, preços, como funcionam as máquinas de fichas e como despejar cinzentas e negras sem erros."
+seoTitle: "Áreas de Serviço para Autocaravanas em Espanha: Guia 2026"
+description: "Áreas de autocaravanas em Espanha: diferença face ao campismo, preços, como funcionam as máquinas de fichas e como despejar cinzentas e negras sem erros."
 pubDate: 2026-09-12
 author: "Marcos & Elena | Especialistas Outdoor"
 category: "pernocta"

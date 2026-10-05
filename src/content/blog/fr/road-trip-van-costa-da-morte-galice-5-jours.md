@@ -1,6 +1,7 @@
 ---
 title: "Road Trip en Van sur la Costa da Morte en 5 Jours : de Malpica à Carnota"
-description: "Itinéraire de 5 jours en van sur la Costa da Morte, en Galice : Malpica, Camariñas, Muxía, Fisterra, Ézaro et Carnota. Où dormir, loi littoral, météo et cuisine."
+seoTitle: "Costa da Morte en van : road trip de 5 jours en Galice"
+description: "Costa da Morte en van : 5 jours en Galice de Malpica à Carnota par Camariñas, Muxía, Fisterra et Ézaro. Où dormir, loi littoral, météo et cuisine."
 pubDate: 2026-09-15
 author: "Marcos & Elena | Spécialistes Outdoor"
 category: "rutas"

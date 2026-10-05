@@ -1,6 +1,7 @@
 ---
 title: "Portable Power Stations for Campervans: EcoFlow vs Bluetti (Real-World Comparison 2026)"
-description: "Is it worth buying an all-in-one solar generator instead of installing a leisure battery with a split-charge relay? We analyse capacity (Wh), LiFePO4 chemistry, charging speed and real consumption."
+seoTitle: "EcoFlow vs Bluetti: Best Power Station for Campervans 2026"
+description: "EcoFlow vs Bluetti for campervans: is a portable power station better than a leisure battery and split-charge relay? Capacity, LiFePO4, charging, real use."
 pubDate: 2026-04-05
 author: "Marcos & Elena | Outdoor Specialists"
 category: "equipamiento"

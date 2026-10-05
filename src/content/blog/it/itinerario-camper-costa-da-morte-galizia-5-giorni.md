@@ -1,6 +1,7 @@
 ---
 title: "Itinerario in Camper sulla Costa da Morte in 5 Giorni: da Malpica a Carnota"
-description: "Itinerario di 5 giorni in camper sulla Costa da Morte, in Galizia: Malpica, Camariñas, Muxía, Fisterra, Ézaro e Carnota. Dove dormire, Ley de Costas, meteo e cibo."
+seoTitle: "Itinerario Camper Costa da Morte: 5 Giorni in Galizia"
+description: "Itinerario di 5 giorni in camper sulla Costa da Morte, in Galizia: Malpica, Camariñas, Muxía, Fisterra, Ézaro e Carnota. Dove dormire, Ley de Costas e meteo."
 pubDate: 2026-09-15
 author: "Marcos & Elena | Esperti Outdoor"
 category: "rutas"

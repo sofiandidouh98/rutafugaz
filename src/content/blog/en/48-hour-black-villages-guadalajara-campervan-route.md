@@ -1,6 +1,7 @@
 ---
 title: "48-Hour Campervan Route Through the Black Villages of Guadalajara"
-description: "A complete weekend itinerary through one of the most authentic areas of the Sierra de Ayllón: slate architecture, crystal-clear pools, overnight parking coordinates and local food."
+seoTitle: "Black Villages of Guadalajara: 48-Hour Campervan Route"
+description: "Black Villages of Guadalajara by campervan: a 48-hour weekend route through the Sierra de Ayllón with slate villages, natural pools and overnight spots."
 pubDate: 2026-03-29
 author: "Marcos & Elena | Outdoor Specialists"
 category: "rutas"

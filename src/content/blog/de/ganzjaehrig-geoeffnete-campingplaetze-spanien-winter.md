@@ -1,6 +1,7 @@
 ---
 title: "Ganzjährig geöffnete Campingplätze in Spanien: Ratgeber für die Winterreise im Camper"
-description: "Die besten Regionen Spaniens für eine Wintertour im Camper, der ACSI-Rabatt in der Nebensaison, was du vor der Buchung prüfst und wie du den Van winterfest machst."
+seoTitle: "Ganzjährig geöffnete Campingplätze Spanien: Winter im Camper"
+description: "Ganzjährig geöffnete Campingplätze in Spanien: die besten Winterregionen, ACSI-Rabatt in der Nebensaison, Buchungstipps und wie du den Van winterfest machst."
 pubDate: 2026-09-22
 author: "Marcos & Elena | Outdoor-Experten"
 category: "pernocta"

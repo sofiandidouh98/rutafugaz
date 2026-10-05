@@ -1,5 +1,6 @@
 ---
 title: "Road Trip en Van dans les Asturies et les Picos de Europa en 7 Jours"
+seoTitle: "Road trip en van : Asturies et Picos de Europa en 7 jours"
 description: "Itinéraire de 7 jours en van dans les Asturies : Covadonga, les lacs, le Cares, Bulnes, Llanes, Lastres et Cudillero. Où dormir, règles du parc et conseils."
 pubDate: 2026-09-08
 author: "Marcos & Elena | Spécialistes Outdoor"

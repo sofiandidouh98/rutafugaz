@@ -1,6 +1,7 @@
 ---
 title: "Itinéraire de 48 Heures dans les Villages Noirs de Guadalajara en Van Aménagé"
-description: "Itinéraire complet pour un week-end dans l'une des régions les plus authentiques de la Sierra de Ayllón : architecture en ardoise, vasques cristallines, coordonnées de bivouac et gastronomie locale."
+seoTitle: "Villages noirs de Guadalajara en van : itinéraire 48 heures"
+description: "Villages noirs de Guadalajara en van : un week-end de 48 heures dans la Sierra de Ayllón, entre villages d'ardoise, vasques cristallines et bivouacs."
 pubDate: 2026-03-29
 author: "Marcos & Elena | Spécialistes Outdoor"
 category: "rutas"

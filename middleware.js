@@ -52,7 +52,7 @@ export default function middleware(request) {
   if (lang === 'es') return;
 
   const url = new URL(request.url);
-  url.pathname = `/${lang}/`;
+  url.pathname = `/${lang}`;
   return new Response(null, {
     status: 307,
     headers: {

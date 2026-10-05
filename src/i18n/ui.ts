@@ -47,7 +47,7 @@ export function langPrefix(lang: Lang): string {
 }
 
 export function homePath(lang: Lang): string {
-  return lang === defaultLang ? '/' : `/${lang}/`;
+  return lang === defaultLang ? '/' : `/${lang}`;
 }
 
 export function categoryPath(lang: Lang, cat: CategoryKey): string {
@@ -110,14 +110,14 @@ export const ui: Record<Lang, Dict> = {
         name: 'Pernocta & Normativa',
         description: 'Dónde dormir gratis y legal, leyes de acampada, cómo evitar sanciones.',
         title: 'Pernocta Legal, Normativa & Lugares donde Dormir | RutaFugaz',
-        metaDescription: 'Todo sobre la legislación de estacionamiento vs acampada en España, cómo evitar multas de medio ambiente y las mejores aplicaciones para encontrar sitios tranquilos.',
+        metaDescription: 'Dónde dormir en furgoneta o autocaravana en España: ley de estacionamiento vs acampada, cómo evitar multas y las mejores apps para encontrar sitios tranquilos.',
         heading: 'Pernocta Legal & Normativa',
         intro: 'Información jurídica rigurosa para defender tus derechos como conductor y pernoctar con total tranquilidad legal y respeto al entorno natural.',
       },
       equipamiento: {
         name: 'Equipamiento Outdoor',
         description: 'Análisis de baterías portátiles, neveras 12V, hornillos y accesorios imprescindibles.',
-        title: 'Equipamiento Outdoor, Baterías & Accesorios Camper | RutaFugaz',
+        title: 'Equipamiento Camper: Baterías, Neveras y Accesorios | RutaFugaz',
         metaDescription: 'Análisis objetivos y pruebas reales de estaciones de energía portátiles, neveras de compresor 12V, hornillos, mochilas y material de acampada.',
         heading: 'Equipamiento Outdoor & Camper',
         intro: 'Pruebas de campo reales y comparativas imparciales. Invertir con inteligencia en el material que no te dejará tirado en mitad de la montaña.',
@@ -125,7 +125,7 @@ export const ui: Record<Lang, Dict> = {
     },
     site: {
       title: 'RutaFugaz | Micro-Aventuras, Furgonetas Camper & Turismo Rural',
-      description: 'Descubre rutas secretas de fin de semana, guías de camperización económica, normativa legal de pernocta y comparativas de equipamiento outdoor para viajar libre.',
+      description: 'Rutas camper de fin de semana, guías de camperización low-cost, normativa de pernocta y comparativas de equipamiento para viajar en furgoneta por España.',
       tagline: 'Camper & Micro-Aventuras',
     },
     header: { editorial: 'E-E-A-T Editorial', freeMap: '📍 Mapa Gratis', language: 'Idioma' },
@@ -305,7 +305,7 @@ export const ui: Record<Lang, Dict> = {
       rutas: {
         name: 'Itinéraires & Escapades',
         description: 'Itinéraires de 24 h à 72 h, cascades, villages de charme et sites naturels.',
-        title: 'Itinéraires & Escapades en Van Aménagé en Espagne | RutaFugaz',
+        title: 'Itinéraires en Van Aménagé en Espagne | RutaFugaz',
         metaDescription: 'Itinéraires détaillés pour le week-end, micro-aventures de 24 h à 72 h, cascades, villages de charme et sites naturels dans toute la péninsule Ibérique.',
         heading: 'Itinéraires & Escapades',
         intro: 'Des itinéraires conçus pour des escapades de 24 à 72 heures. Cartes, stations-service stratégiques, gastronomie locale et coordonnées vérifiées.',
@@ -314,7 +314,7 @@ export const ui: Record<Lang, Dict> = {
         name: 'Guide Aménagement Van',
         description: 'Tutoriels d’aménagement low-cost, isolation, électricité 12 V et bricolage.',
         title: 'Guide d’Aménagement de Van Petit Budget | RutaFugaz',
-        metaDescription: 'Tutoriels pratiques pour aménager un van à petit prix, isolation thermique, installations électriques 12 V et astuces pour éviter une homologation coûteuse.',
+        metaDescription: 'Aménager un van à petit prix : tutoriels pratiques, isolation thermique, électricité 12 V et astuces pour éviter une homologation coûteuse.',
         heading: 'Guide d’Aménagement de Van',
         intro: 'Apprenez à transformer n’importe quel utilitaire en maison sur roues. Projets de bricolage accessibles, plans détaillés et vraies listes d’achats.',
       },
@@ -322,7 +322,7 @@ export const ui: Record<Lang, Dict> = {
         name: 'Bivouac & Réglementation',
         description: 'Où dormir gratuitement et légalement, lois sur le camping, comment éviter les amendes.',
         title: 'Bivouac Légal, Réglementation & Où Dormir | RutaFugaz',
-        metaDescription: 'Tout sur la différence légale entre stationner et camper en Espagne, comment éviter les amendes environnementales et les meilleures applis pour trouver des coins tranquilles.',
+        metaDescription: 'Stationner ou camper en Espagne : ce que dit la loi, comment éviter les amendes et les meilleures applis pour trouver des spots tranquilles pour la nuit.',
         heading: 'Bivouac Légal & Réglementation',
         intro: 'Des informations juridiques rigoureuses pour défendre vos droits de conducteur et passer la nuit en toute tranquillité, dans le respect de la nature.',
       },
@@ -337,7 +337,7 @@ export const ui: Record<Lang, Dict> = {
     },
     site: {
       title: 'RutaFugaz | Micro-Aventures, Vans Aménagés & Tourisme Rural',
-      description: 'Découvrez des itinéraires secrets pour le week-end, des guides d’aménagement de van petit budget, la réglementation du bivouac et des comparatifs d’équipement outdoor.',
+      description: 'Itinéraires en van pour le week-end, aménagement petit budget, réglementation du bivouac en Espagne et comparatifs d’équipement outdoor.',
       tagline: 'Van & Micro-Aventures',
     },
     header: { editorial: 'Équipe Éditoriale', freeMap: '📍 Carte Gratuite', language: 'Langue' },
@@ -412,7 +412,7 @@ export const ui: Record<Lang, Dict> = {
         name: 'Routen & Kurztrips',
         description: 'Routen für 24 bis 72 Stunden, Wasserfälle, malerische Dörfer und Naturlandschaften.',
         title: 'Camper-Routen & Wochenendtrips in Spanien | RutaFugaz',
-        metaDescription: 'Detaillierte Wochenendrouten, Mikroabenteuer von 24 bis 72 Stunden, Wasserfälle, malerische Dörfer und Naturlandschaften auf der ganzen Iberischen Halbinsel.',
+        metaDescription: 'Camper-Routen fürs Wochenende: Mikroabenteuer von 24 bis 72 Stunden, Wasserfälle, malerische Dörfer und Naturlandschaften in ganz Spanien.',
         heading: 'Routen & Kurztrips',
         intro: 'Routen für Kurztrips von 24 bis 72 Stunden. Karten, strategische Tankstopps, regionale Küche und geprüfte Koordinaten.',
       },
@@ -655,7 +655,7 @@ export const ui: Record<Lang, Dict> = {
     },
     site: {
       title: 'RutaFugaz | Micro-Aventuras, Carrinhas Camper & Turismo Rural',
-      description: 'Descobre rotas secretas de fim de semana, guias de camperização económica, legislação sobre pernoita e comparativas de equipamento outdoor para viajar livre.',
+      description: 'Rotas de carrinha camper para o fim de semana, camperização low-cost, legislação sobre pernoita em Espanha e comparativas de equipamento outdoor.',
       tagline: 'Camper & Micro-Aventuras',
     },
     header: { editorial: 'Equipa Editorial', freeMap: '📍 Mapa Grátis', language: 'Idioma' },

@@ -1,5 +1,6 @@
 ---
 title: "Come Allestire un Furgone Piccolo in Camper con Meno di 500 € (Berlingo, Rifter, Caddy)"
+seoTitle: "Allestire un Furgone in Camper con Meno di 500 €: Guida"
 description: "Guida passo dopo passo per trasformare un furgone compatto in un mini camper funzionale e comodo, senza omologazioni e senza svenarsi."
 pubDate: 2026-03-22
 author: "Marcos & Elena | Esperti Outdoor"

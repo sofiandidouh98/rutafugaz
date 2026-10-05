@@ -1,6 +1,7 @@
 ---
 title: "Alugar uma Autocaravana pela Primeira Vez: Guia Completo (Carta, Preços e Checklist)"
-description: "Tudo o que precisas de saber antes de alugar a tua primeira autocaravana ou carrinha camper em Espanha: carta de condução, preços indicativos, seguro, caução e checklist."
+seoTitle: "Alugar Autocaravana pela Primeira Vez: Preços e Checklist"
+description: "Alugar a primeira autocaravana ou camper em Espanha: carta de condução, preços indicativos, seguro, caução e checklist de levantamento para não falhar."
 pubDate: 2026-09-18
 author: "Marcos & Elena | Especialistas Outdoor"
 category: "camper"

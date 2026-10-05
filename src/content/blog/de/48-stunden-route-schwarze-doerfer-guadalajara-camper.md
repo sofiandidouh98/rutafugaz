@@ -1,6 +1,7 @@
 ---
 title: "48-Stunden-Route durch die Schwarzen Dörfer von Guadalajara mit dem Campervan"
-description: "Komplette Wochenendroute durch eine der ursprünglichsten Gegenden der Sierra de Ayllón: Schieferarchitektur, kristallklare Naturbecken, Koordinaten zum Übernachten und regionale Küche."
+seoTitle: "Schwarze Dörfer Guadalajara: 48-Stunden-Route im Camper"
+description: "Wochenendroute im Camper durch die Schwarzen Dörfer der Sierra de Ayllón: Schieferarchitektur, Naturbecken, Koordinaten zum Übernachten und regionale Küche."
 pubDate: 2026-03-29
 author: "Marcos & Elena | Outdoor-Experten"
 category: "rutas"

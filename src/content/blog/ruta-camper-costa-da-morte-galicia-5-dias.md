@@ -1,5 +1,6 @@
 ---
 title: "Ruta Camper por la Costa da Morte en 5 Días: de Malpica a Carnota"
+seoTitle: "Ruta Camper Costa da Morte en 5 Días: de Malpica a Carnota"
 description: "Itinerario de 5 días en furgoneta por la Costa da Morte: Malpica, Camariñas, Muxía, Fisterra, Ézaro y Carnota. Dónde dormir, Ley de Costas, clima y percebes."
 pubDate: 2026-09-15
 author: "Marcos & Elena | Especialistas Outdoor"

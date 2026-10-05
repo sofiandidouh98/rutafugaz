@@ -1,5 +1,6 @@
 ---
 title: "Dog-Friendly Beaches in Spain: A Coastal Van Road Trip with Your Best Friend"
+seoTitle: "Dog-Friendly Beaches in Spain: Coastal Van Road Trip"
 description: "How dog beaches work in Spain, which regions have the most options, where to find the official up-to-date list and a coastal van route with tips for your dog."
 pubDate: 2026-10-03
 author: "Marcos & Elena | Outdoor Specialists"

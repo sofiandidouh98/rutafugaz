@@ -1,5 +1,6 @@
 ---
 title: "Wohnmobil-Stellplätze in Spanien: Der komplette Ratgeber zu Service, Preisen und Regeln (2026)"
+seoTitle: "Wohnmobil-Stellplätze Spanien: Preise, Service, Regeln 2026"
 description: "Wohnmobil-Stellplätze in Spanien: Unterschied zum Campingplatz, Preise, wie Münz- und Jetonsäulen funktionieren und wie du Grau- und Schwarzwasser entsorgst."
 pubDate: 2026-09-12
 author: "Marcos & Elena | Outdoor-Experten"

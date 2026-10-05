@@ -1,6 +1,7 @@
 ---
 title: "Alquilar una Autocaravana por Primera Vez: Guía Completa (Carnet, Precios y Checklist)"
-description: "Todo lo que necesitas saber antes de alquilar tu primera autocaravana o camper en España: carnet, precios orientativos, seguro, fianza y checklist de recogida."
+seoTitle: "Alquilar Autocaravana por Primera Vez: Precios y Checklist"
+description: "Todo antes de alquilar tu primera autocaravana o camper en España: carnet, precios orientativos, seguro, fianza y checklist de recogida para no fallar."
 pubDate: 2026-09-18
 author: "Marcos & Elena | Especialistas Outdoor"
 category: "camper"

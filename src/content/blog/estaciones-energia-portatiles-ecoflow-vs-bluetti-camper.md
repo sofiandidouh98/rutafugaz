@@ -1,6 +1,7 @@
 ---
 title: "Estaciones de Energía Portátiles para Camper: EcoFlow vs Bluetti (Comparativa Real 2026)"
-description: "¿Vale la pena comprar un generador solar 'todo en uno' en lugar de instalar una segunda batería con relé? Analizamos capacidad (Wh), química LiFePO4, velocidad de carga y consumo real."
+seoTitle: "EcoFlow vs Bluetti para Camper: Comparativa Real 2026"
+description: "EcoFlow vs Bluetti para tu camper: ¿estación portátil o segunda batería con relé? Comparamos capacidad (Wh), LiFePO4, velocidad de carga y consumo real."
 pubDate: 2026-04-05
 author: "Marcos & Elena | Especialistas Outdoor"
 category: "equipamiento"

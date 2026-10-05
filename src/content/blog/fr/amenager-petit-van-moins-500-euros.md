@@ -1,5 +1,6 @@
 ---
 title: "Comment Aménager un Petit Van pour Moins de 500 € (Berlingo, Rifter, Caddy)"
+seoTitle: "Aménager un petit van pour moins de 500 € : guide pas à pas"
 description: "Guide pas à pas pour transformer un ludospace compact en mini-van aménagé fonctionnel et confortable, sans homologation ni vous ruiner."
 pubDate: 2026-03-22
 author: "Marcos & Elena | Spécialistes Outdoor"

@@ -1,6 +1,7 @@
 ---
 title: "Campsites Open All Year in Spain: A Guide to Winter Campervan Travel"
-description: "The best parts of Spain for a winter campervan trip, how the ACSI low-season discount works, what to check before booking and how to get your van ready for the cold."
+seoTitle: "Campsites Open All Year in Spain: Winter Campervan Guide"
+description: "Campsites open all year in Spain: the best regions for a winter campervan trip, the ACSI low-season discount, what to check before booking and cold-proofing."
 pubDate: 2026-09-22
 author: "Marcos & Elena | Outdoor Specialists"
 category: "pernocta"

@@ -1,5 +1,6 @@
 ---
 title: "Áreas de Autocaravanas en España: Guía Completa de Servicios, Precios y Normas (2026)"
+seoTitle: "Áreas de Autocaravanas en España: Servicios y Precios 2026"
 description: "Qué es un área de autocaravanas, en qué se diferencia de un camping, cuánto cuesta, cómo funcionan las bornes de fichas y cómo vaciar grises y negras bien."
 pubDate: 2026-09-12
 author: "Marcos & Elena | Especialistas Outdoor"

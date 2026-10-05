@@ -1,6 +1,7 @@
 ---
 title: "Renting a Motorhome for the First Time: Complete Guide (Licence, Prices and Checklist)"
-description: "Everything you need to know before renting your first motorhome or campervan in Spain: driving licence, approximate prices, insurance, deposit and a pickup checklist."
+seoTitle: "Motorhome Rental in Spain: First-Time Guide and Checklist"
+description: "Renting a motorhome or campervan in Spain for the first time: driving licence, approximate prices, insurance, deposit and a checklist for pickup day."
 pubDate: 2026-09-18
 author: "Marcos & Elena | Outdoor Specialists"
 category: "camper"

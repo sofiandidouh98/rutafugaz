@@ -1,5 +1,6 @@
 ---
 title: "Aree di Sosta Camper in Spagna: Guida Completa a Servizi, Prezzi e Regole (2026)"
+seoTitle: "Aree Sosta Camper Spagna: Servizi, Prezzi e Regole 2026"
 description: "Aree di sosta camper in Spagna: differenze con il campeggio, prezzi, come funzionano le colonnine a gettoni e come scaricare acque grigie e nere senza errori."
 pubDate: 2026-09-12
 author: "Marcos & Elena | Esperti Outdoor"

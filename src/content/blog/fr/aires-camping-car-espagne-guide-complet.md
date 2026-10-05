@@ -1,5 +1,6 @@
 ---
 title: "Aires de Camping-Car en Espagne : Guide Complet des Services, Prix et Règles (2026)"
+seoTitle: "Aires de camping-car en Espagne : prix, services et règles"
 description: "Aire de camping-car en Espagne : différence avec un camping, prix, fonctionnement des bornes à jetons et vidange des eaux grises et noires sans erreur."
 pubDate: 2026-09-12
 author: "Marcos & Elena | Spécialistes Outdoor"

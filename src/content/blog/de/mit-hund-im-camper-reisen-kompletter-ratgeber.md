@@ -1,6 +1,7 @@
 ---
 title: "Mit Hund im Camper reisen: Der komplette Ratgeber für sichere und glückliche Touren (2026)"
-description: "Alles fürs Reisen im Campervan mit Hund: sichere Beförderung, Dokumente, Hitzegefahr, Packliste, hundefreundliche Campingplätze und Notfälle unterwegs in Spanien."
+seoTitle: "Mit Hund im Camper reisen: Kompletter Ratgeber 2026"
+description: "Mit Hund im Camper reisen: sichere Beförderung, Dokumente, Hitzegefahr, Packliste, hundefreundliche Campingplätze und Notfälle unterwegs in Spanien."
 pubDate: 2026-09-25
 author: "Marcos & Elena | Outdoor-Experten"
 category: "camper"

@@ -1,6 +1,7 @@
 ---
 title: "Camping-Car, Van ou Caravane : Lequel Choisir ? (Comparatif Complet)"
-description: "Nous comparons camping-car, van aménagé et caravane : prix neuf et occasion, conduite, permis, consommation, confort, péages et revente. Découvrez lequel vous convient."
+seoTitle: "Camping-car, van ou caravane : lequel choisir ? Comparatif"
+description: "Camping-car, van aménagé ou caravane : prix neuf et occasion, conduite, permis, consommation, confort, péages et revente. Découvrez lequel vous convient."
 pubDate: 2026-09-29
 author: "Marcos & Elena | Spécialistes Outdoor"
 category: "camper"

@@ -2,8 +2,10 @@
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import AdBanner from '../AdBanner.astro';
 import NewsletterBox from '../NewsletterBox.astro';
+import PostCard from '../PostCard.astro';
 import { getPostsByLang, homeAlternates } from '../../i18n/posts';
-import { categoryColors, categoryIcons, categoryKeys, categoryPath, postPath, t, type Lang } from '../../i18n/ui';
+import { categoryColors, categoryIcons, categoryKeys, categoryPath, langPrefix, postPath, t, type Lang } from '../../i18n/ui';
+import { extraUi, resizeImage } from '../../i18n/extra';
 
 interface Props {
   lang: Lang;
@@ -15,7 +17,7 @@ const h = strings.home;
 
 const sortedPosts = await getPostsByLang(lang);
 const featuredPosts = sortedPosts.filter(p => p.data.featured);
-const recentPosts = sortedPosts.slice(0, 6);
+const recentPosts = sortedPosts.slice(0, 9);
 ---
 
 <BaseLayout lang={lang} alternates={homeAlternates()}>
@@ -26,6 +28,9 @@ const recentPosts = sortedPosts.slice(0, 6);
         src="https://images.unsplash.com/photo-1523987355523-c7b5b0dd90a7?auto=format&fit=crop&w=1800&q=80"
         alt={h.heroImgAlt}
         class="w-full h-full object-cover"
+        width="1800"
+        height="1000"
+        fetchpriority="high"
       />
     </div>
 
@@ -115,7 +120,10 @@ const recentPosts = sortedPosts.slice(0, 6);
           <article class="bg-white border border-stone-200 rounded-2xl overflow-hidden shadow-xs hover:shadow-lg transition flex flex-col group">
             <a href={postPath(post.id)} class="overflow-hidden aspect-video block relative">
               <img
-                src={post.data.heroImage}
+                src={resizeImage(post.data.heroImage, 640)}
+                width="640"
+                height="360"
+                decoding="async"
                 alt={post.data.title}
                 class="w-full h-full object-cover group-hover:scale-105 transition duration-300"
                 loading="lazy"
@@ -166,34 +174,13 @@ const recentPosts = sortedPosts.slice(0, 6);
       </div>
 
       <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-        {recentPosts.map((post) => (
-          <article class="bg-white border border-stone-200 rounded-2xl overflow-hidden shadow-xs hover:shadow-md transition flex flex-col group">
-            <a href={postPath(post.id)} class="overflow-hidden aspect-video block">
-              <img
-                src={post.data.heroImage}
-                alt={post.data.title}
-                class="w-full h-full object-cover group-hover:scale-105 transition duration-300"
-                loading="lazy"
-              />
-            </a>
-            <div class="p-5 flex-1 flex flex-col justify-between">
-              <div>
-                <span class={`text-[10px] font-mono uppercase tracking-wider px-2 py-0.5 rounded-sm font-semibold ${categoryColors[post.data.category]}`}>
-                  {strings.nav[post.data.category]}
-                </span>
-                <h3 class="mt-2 text-sm font-bold text-stone-900 group-hover:text-emerald-700 transition leading-snug">
-                  <a href={postPath(post.id)}>
-                    {post.data.title}
-                  </a>
-                </h3>
-              </div>
-              <div class="mt-4 pt-3 border-t border-stone-100 flex items-center justify-between text-[11px] text-stone-500">
-                <span>{post.data.readTime}</span>
-                <span class="text-emerald-700 font-semibold group-hover:underline">{h.read}</span>
-              </div>
-            </div>
-          </article>
-        ))}
+        {recentPosts.map((post) => <PostCard post={post} />)}
+      </div>
+
+      <div class="mt-8 text-center">
+        <a href={`${langPrefix(lang)}/blog`} class="inline-flex items-center px-5 py-3 bg-stone-900 hover:bg-stone-800 text-white font-semibold rounded-xl text-sm transition">
+          {extraUi[lang].blogHeading} →
+        </a>
       </div>
     </section>
 

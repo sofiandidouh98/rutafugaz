@@ -1,6 +1,7 @@
 ---
 title: "Campeggi Aperti Tutto l'Anno in Spagna: Guida per Viaggiare in Camper d'Inverno"
-description: "Le migliori zone della Spagna per il camper d'inverno, come funziona lo sconto ACSI in bassa stagione, cosa controllare prima di prenotare e come affrontare il freddo."
+seoTitle: "Campeggi Aperti Tutto l'Anno in Spagna: Camper d'Inverno"
+description: "Campeggi aperti tutto l'anno in Spagna: le zone migliori per il camper d'inverno, lo sconto ACSI in bassa stagione, cosa controllare e come gestire il freddo."
 pubDate: 2026-09-22
 author: "Marcos & Elena | Esperti Outdoor"
 category: "pernocta"

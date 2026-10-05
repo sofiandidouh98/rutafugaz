@@ -1,5 +1,6 @@
 ---
 title: "How to Convert a Small Van into a Camper for Under €500 (Berlingo, Rifter, Caddy)"
+seoTitle: "Small Van Conversion Under €500: Berlingo, Rifter, Caddy"
 description: "Step-by-step guide to turning a compact van into a functional, comfortable mini camper without re-registering the vehicle or breaking the bank."
 pubDate: 2026-03-22
 author: "Marcos & Elena | Outdoor Specialists"

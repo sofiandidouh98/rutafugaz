@@ -1,6 +1,7 @@
 ---
 title: "7-Day Campervan Route Through Asturias and Picos de Europa"
-description: "A 7-day van itinerary through Asturias: Covadonga, the lakes, the Cares gorge, Bulnes, Llanes, Lastres and Cudillero. Where to sleep, park rules and driving tips."
+seoTitle: "Campervan Route Asturias & Picos de Europa: 7-Day Itinerary"
+description: "Asturias campervan route: 7 days through Covadonga and its lakes, the Cares gorge, Bulnes, Llanes, Lastres and Cudillero, with where to sleep and park rules."
 pubDate: 2026-09-08
 author: "Marcos & Elena | Outdoor Specialists"
 category: "rutas"

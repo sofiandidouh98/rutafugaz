@@ -1,5 +1,6 @@
 ---
 title: "Motorhome Service Areas in Spain: Complete Guide to Services, Prices and Rules (2026)"
+seoTitle: "Motorhome Service Areas in Spain: Prices and Rules (2026)"
 description: "What a Spanish motorhome area is, how it differs from a campsite, what it costs, how token service points work and how to empty grey and black water properly."
 pubDate: 2026-09-12
 author: "Marcos & Elena | Outdoor Specialists"

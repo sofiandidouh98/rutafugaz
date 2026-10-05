@@ -1,6 +1,7 @@
 ---
 title: "Rota de 48 Horas pelas Aldeias Negras de Guadalajara em Carrinha Camper"
-description: "Roteiro completo de fim de semana por uma das regiões mais autênticas da Serra de Ayllón: arquitetura de xisto, piscinas naturais cristalinas, coordenadas para pernoitar e gastronomia local."
+seoTitle: "Aldeias Negras de Guadalajara de Camper: Rota de 48 Horas"
+description: "Rota de fim de semana de camper pelas Aldeias Negras de Guadalajara: arquitetura de xisto, piscinas naturais, coordenadas para pernoitar e gastronomia."
 pubDate: 2026-03-29
 author: "Marcos & Elena | Especialistas Outdoor"
 category: "rutas"

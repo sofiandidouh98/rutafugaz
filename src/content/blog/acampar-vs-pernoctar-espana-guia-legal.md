@@ -1,6 +1,7 @@
 ---
 title: "Acampar vs Pernoctar en España: Guía Legal Definitiva para que no te Multen (2026)"
-description: "Descubre exactamente qué dice la ley sobre dormir en tu furgoneta o autocaravana en España. Conoce la Instrucción 08/V-74 de la DGT, los errores más comunes y cómo defender tus derechos."
+seoTitle: "Acampar vs Pernoctar en Autocaravana: Qué Dice la Ley (2026)"
+description: "Acampar vs pernoctar en furgoneta o autocaravana en España: qué dice la Instrucción 08/V-74 de la DGT, errores que te cuestan multas y cómo defenderte."
 pubDate: 2026-03-15
 author: "Marcos & Elena | Especialistas Outdoor"
 category: "pernocta"

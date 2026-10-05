@@ -1,6 +1,7 @@
 ---
 title: "Hundestrände in Spanien: Küstenroute mit dem Camper und deinem besten Freund"
-description: "So funktionieren Hundestrände in Spanien: Regionen mit den meisten Optionen, wo du die aktuelle offizielle Liste findest und eine Küstenroute im Camper mit Tipps."
+seoTitle: "Hundestrände Spanien: Küstenroute mit Camper und Hund"
+description: "Hundestrände in Spanien: Regionen mit den meisten Optionen, wo du die aktuelle offizielle Liste findest und eine Küstenroute im Camper mit Tipps."
 pubDate: 2026-10-03
 author: "Marcos & Elena | Outdoor-Experten"
 category: "rutas"

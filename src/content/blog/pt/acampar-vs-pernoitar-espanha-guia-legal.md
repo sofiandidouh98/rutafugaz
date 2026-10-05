@@ -1,6 +1,7 @@
 ---
 title: "Acampar vs Pernoitar em Espanha: o Guia Legal Definitivo para Não Seres Multado (2026)"
-description: "Descobre exatamente o que diz a lei espanhola sobre dormir na tua carrinha ou autocaravana. A Instrução 08/V-74 da DGT, os erros mais comuns e como defender os teus direitos."
+seoTitle: "Acampar vs Pernoitar em Espanha: o que Diz a Lei (2026)"
+description: "Acampar vs pernoitar de carrinha ou autocaravana em Espanha: o que diz a Instrução 08/V-74 da DGT, os erros que dão multa e como defender os teus direitos."
 pubDate: 2026-03-15
 author: "Marcos & Elena | Especialistas Outdoor"
 category: "pernocta"

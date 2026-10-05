@@ -1,6 +1,7 @@
 ---
 title: "Campervan Travel with a Dog: The Complete Guide to Safe and Happy Trips (2026)"
-description: "Everything you need to travel in a campervan with your dog: safe transport, paperwork, the danger of heat, a packing checklist, dog-friendly campsites and emergencies."
+seoTitle: "Campervan Travel with a Dog: Complete Safety Guide (2026)"
+description: "Campervan travel with a dog: safe transport, paperwork, the danger of heat, a packing checklist, dog-friendly campsites and what to do in an emergency."
 pubDate: 2026-09-25
 author: "Marcos & Elena | Outdoor Specialists"
 category: "camper"

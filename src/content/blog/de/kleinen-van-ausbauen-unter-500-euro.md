@@ -1,6 +1,7 @@
 ---
 title: "Einen kleinen Van für unter 500 € zum Camper ausbauen (Berlingo, Rifter, Caddy)"
-description: "Schritt-für-Schritt-Anleitung, um einen kompakten Hochdachkombi in einen funktionalen und bequemen Mini-Camper zu verwandeln – ohne Umschreibung beim TÜV und ohne dich zu ruinieren."
+seoTitle: "Van zum Camper ausbauen unter 500 €: Berlingo, Rifter, Caddy"
+description: "Kleinen Van für unter 500 € zum Mini-Camper ausbauen: Schritt-für-Schritt-Anleitung für Berlingo, Rifter und Caddy, ohne Umschreibung beim TÜV."
 pubDate: 2026-03-22
 author: "Marcos & Elena | Outdoor-Experten"
 category: "camper"

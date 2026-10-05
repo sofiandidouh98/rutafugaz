@@ -1,6 +1,7 @@
 ---
 title: "Noleggiare un Camper per la Prima Volta: Guida Completa (Patente, Prezzi e Checklist)"
-description: "Tutto quello che devi sapere prima di noleggiare il tuo primo camper o van in Spagna: patente, prezzi indicativi, assicurazione, cauzione e checklist per il ritiro."
+seoTitle: "Noleggiare un Camper la Prima Volta: Guida, Prezzi e Patente"
+description: "Noleggiare un camper per la prima volta in Spagna: patente, prezzi indicativi, assicurazione, cauzione e checklist per il ritiro del camper o del van."
 pubDate: 2026-09-18
 author: "Marcos & Elena | Esperti Outdoor"
 category: "camper"

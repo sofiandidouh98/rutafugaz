@@ -5,8 +5,14 @@ import sitemap from '@astrojs/sitemap';
 
 // https://astro.build/config
 export default defineConfig({
-  site: 'https://rutafugaz.site',
-  integrations: [sitemap()],
+  site: 'https://www.rutafugaz.site',
+  trailingSlash: 'never',
+  integrations: [
+    sitemap({
+      // Páginas sin valor para buscadores
+      filter: (page) => !/\/(gracias-mapa|404)\/?$/.test(page),
+    }),
+  ],
   vite: {
     plugins: [tailwindcss()],
   },

@@ -1,6 +1,7 @@
 ---
 title: "Wohnmobil, Campervan oder Wohnwagen: Was Solltest Du Wählen? (Großer Vergleich)"
-description: "Wir vergleichen Wohnmobil, Campervan und Wohnwagen: Neu- und Gebrauchtpreise, Fahren, Führerschein, Verbrauch, Komfort, Maut und Wiederverkauf. Finde heraus, was passt."
+seoTitle: "Wohnmobil, Campervan oder Wohnwagen? Der große Vergleich"
+description: "Wohnmobil, Campervan oder Wohnwagen im Vergleich: Neu- und Gebrauchtpreise, Fahren, Führerschein, Verbrauch, Komfort, Maut und Wiederverkauf."
 pubDate: 2026-09-29
 author: "Marcos & Elena | Outdoor-Experten"
 category: "camper"

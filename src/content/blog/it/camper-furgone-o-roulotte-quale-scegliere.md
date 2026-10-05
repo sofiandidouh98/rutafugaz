@@ -1,6 +1,7 @@
 ---
 title: "Camper, Van o Roulotte: Quale Scegliere? (Confronto Completo)"
-description: "Confrontiamo camper, furgone camperizzato e roulotte: prezzo nuovo e usato, guida, patente, consumi, comfort, pedaggi e rivendita. Scopri quale fa davvero per te."
+seoTitle: "Camper, Van o Roulotte: Quale Scegliere? Confronto Completo"
+description: "Camper, furgone camperizzato o roulotte a confronto: prezzo nuovo e usato, guida, patente, consumi, comfort, pedaggi e rivendita. Scopri quale fa per te."
 pubDate: 2026-09-29
 author: "Marcos & Elena | Esperti Outdoor"
 category: "camper"

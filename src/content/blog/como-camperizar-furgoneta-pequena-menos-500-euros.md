@@ -1,5 +1,6 @@
 ---
 title: "Cómo Camperizar una Furgoneta Pequeña por Menos de 500 € (Berlingo, Rifter, Caddy)"
+seoTitle: "Camperizar una Furgoneta Pequeña por Menos de 500 €"
 description: "Guía paso a paso para transformar una furgoneta compacta en una minicamper funcional y cómoda sin necesidad de homologar en ITV ni arruinarte en el intento."
 pubDate: 2026-03-22
 author: "Marcos & Elena | Especialistas Outdoor"

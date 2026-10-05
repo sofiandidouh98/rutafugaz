@@ -1,6 +1,7 @@
 ---
 title: "Parques de Campismo Abertos Todo o Ano em Espanha: Guia para Viajar de Carrinha no Inverno"
-description: "As melhores zonas de Espanha para viajar de carrinha no inverno, como funciona o desconto ACSI, o que verificar ao reservar e como preparar a carrinha para o frio."
+seoTitle: "Parques de Campismo Abertos Todo o Ano em Espanha: Inverno"
+description: "Parques de campismo abertos todo o ano em Espanha: as melhores zonas de inverno, o desconto ACSI, o que verificar ao reservar e como preparar a carrinha."
 pubDate: 2026-09-22
 author: "Marcos & Elena | Especialistas Outdoor"
 category: "pernocta"

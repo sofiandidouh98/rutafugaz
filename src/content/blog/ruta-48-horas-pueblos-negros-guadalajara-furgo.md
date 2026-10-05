@@ -1,6 +1,7 @@
 ---
 title: "Ruta de 48 Horas por los Pueblos Negros de Guadalajara en Furgoneta Camper"
-description: "Itinerario completo de fin de semana por una de las comarcas más auténticas de la Sierra de Ayllón: arquitectura de pizarra, pozas cristalinas, coordenadas de pernocta y gastronomía local."
+seoTitle: "Pueblos Negros de Guadalajara en Camper: Ruta de 48 Horas"
+description: "Ruta de fin de semana en camper por los Pueblos Negros de Guadalajara: arquitectura de pizarra, pozas cristalinas, dónde pernoctar y gastronomía local."
 pubDate: 2026-03-29
 author: "Marcos & Elena | Especialistas Outdoor"
 category: "rutas"

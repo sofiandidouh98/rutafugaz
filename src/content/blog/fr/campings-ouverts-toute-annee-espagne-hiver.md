@@ -1,6 +1,7 @@
 ---
 title: "Campings Ouverts Toute l'Année en Espagne : Guide pour Voyager en Van en Hiver"
-description: "Les meilleures régions d'Espagne pour un voyage en van en hiver, la réduction ACSI en basse saison, quoi vérifier avant de réserver et préparer le van au froid."
+seoTitle: "Campings ouverts toute l'année en Espagne : l'hiver en van"
+description: "Campings ouverts toute l'année en Espagne : meilleures régions pour l'hiver en van, réduction ACSI en basse saison, quoi vérifier et préparer le van au froid."
 pubDate: 2026-09-22
 author: "Marcos & Elena | Spécialistes Outdoor"
 category: "pernocta"

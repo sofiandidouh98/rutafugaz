@@ -1,6 +1,7 @@
 ---
 title: "Motorhome, Campervan or Caravan: Which One Should You Choose? (Full Comparison)"
-description: "We compare motorhomes, campervans and caravans: new and used prices, driving, licence, fuel use, comfort, tolls and resale value. Find out which one suits you best."
+seoTitle: "Motorhome vs Campervan vs Caravan: Which Should You Choose?"
+description: "Motorhome vs campervan vs caravan compared: new and used prices, driving, licence, fuel use, comfort, tolls and resale value, so you can choose the right one."
 pubDate: 2026-09-29
 author: "Marcos & Elena | Outdoor Specialists"
 category: "camper"

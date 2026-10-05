@@ -1,6 +1,7 @@
 ---
 title: "Camper ou Stationner en Espagne : le Guide Légal Définitif pour Éviter les Amendes (2026)"
-description: "Découvrez exactement ce que dit la loi espagnole sur le fait de dormir dans votre van ou camping-car. L'Instruction 08/V-74 de la DGT, les erreurs les plus courantes et comment défendre vos droits."
+seoTitle: "Dormir en van en Espagne : la loi et les amendes (2026)"
+description: "Dormir en van ou camping-car en Espagne : ce que dit la loi, l'Instruction 08/V-74 de la DGT, les erreurs courantes et comment défendre vos droits."
 pubDate: 2026-03-15
 author: "Marcos & Elena | Spécialistes Outdoor"
 category: "pernocta"

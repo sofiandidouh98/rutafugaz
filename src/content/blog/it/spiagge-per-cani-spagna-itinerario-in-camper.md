@@ -1,6 +1,7 @@
 ---
 title: "Spiagge per Cani in Spagna: Itinerario in Camper lungo la Costa con il tuo Migliore Amico"
-description: "Come funzionano le spiagge per cani in Spagna, le regioni con più opzioni, dove trovare l'elenco ufficiale aggiornato e un itinerario costiero in camper con consigli."
+seoTitle: "Spiagge per Cani in Spagna: Itinerario in Camper sulla Costa"
+description: "Spiagge per cani in Spagna: come funzionano, le regioni con più opzioni, dove trovare l'elenco ufficiale aggiornato e un itinerario costiero in camper."
 pubDate: 2026-10-03
 author: "Marcos & Elena | Esperti Outdoor"
 category: "rutas"

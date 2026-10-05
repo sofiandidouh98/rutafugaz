@@ -1,6 +1,7 @@
 ---
 title: "Voyager en Van avec son Chien : le Guide Complet pour des Road Trips Sereins (2026)"
-description: "Tout pour voyager en van aménagé avec votre chien : transport sécurisé, documents, danger de la chaleur, checklist, campings qui acceptent les chiens et urgences."
+seoTitle: "Voyager en van avec son chien : guide complet (2026)"
+description: "Voyager en van avec son chien : transport sécurisé, documents, danger de la chaleur, checklist, campings qui acceptent les chiens et urgences."
 pubDate: 2026-09-25
 author: "Marcos & Elena | Spécialistes Outdoor"
 category: "camper"

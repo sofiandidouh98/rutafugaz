@@ -1,6 +1,7 @@
 ---
 title: "Viajar en Camper con Perro: Guía Completa para Rutas Seguras y Felices (2026)"
-description: "Todo para viajar en camper con tu perro: cómo llevarlo seguro, documentación, peligro del calor, checklist de equipaje, campings que admiten perros y urgencias."
+seoTitle: "Viajar en Camper con Perro: Guía Completa y Checklist 2026"
+description: "Viajar en camper con perro: cómo llevarlo seguro, documentación, peligro del calor, checklist de equipaje, campings que admiten perros y urgencias."
 pubDate: 2026-09-25
 author: "Marcos & Elena | Especialistas Outdoor"
 category: "camper"

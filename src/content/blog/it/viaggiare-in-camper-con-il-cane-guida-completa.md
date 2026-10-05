@@ -1,5 +1,6 @@
 ---
 title: "Viaggiare in Camper con il Cane: Guida Completa per Viaggi Sicuri e Felici (2026)"
+seoTitle: "Viaggiare in Camper con il Cane: Guida Completa 2026"
 description: "Tutto per viaggiare in van camperizzato con il tuo cane: trasporto sicuro, documenti, pericolo del caldo, checklist, campeggi che accettano cani ed emergenze."
 pubDate: 2026-09-25
 author: "Marcos & Elena | Esperti Outdoor"

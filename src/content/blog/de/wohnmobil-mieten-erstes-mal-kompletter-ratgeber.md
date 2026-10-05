@@ -1,6 +1,7 @@
 ---
 title: "Zum Ersten Mal ein Wohnmobil Mieten: Der Komplette Ratgeber (Führerschein, Preise und Checkliste)"
-description: "Alles, was du vor deinem ersten Wohnmobil- oder Campervan-Urlaub in Spanien wissen musst: Führerschein, ungefähre Preise, Versicherung, Kaution und Übergabe-Checkliste."
+seoTitle: "Wohnmobil mieten zum ersten Mal: Ratgeber und Checkliste"
+description: "Wohnmobil mieten zum ersten Mal in Spanien: Führerschein, ungefähre Preise, Versicherung, Kaution und Checkliste für die Übergabe des Campers."
 pubDate: 2026-09-18
 author: "Marcos & Elena | Outdoor-Experten"
 category: "camper"

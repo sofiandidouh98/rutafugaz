@@ -1,6 +1,7 @@
 ---
 title: "Praias para Cães em Espanha: Rota de Carrinha pela Costa com o teu Melhor Amigo"
-description: "Como funcionam as praias para cães em Espanha, as regiões com mais opções, onde encontrar a lista oficial atualizada e uma rota costeira de carrinha com dicas úteis."
+seoTitle: "Praias para Cães em Espanha: Rota de Carrinha pela Costa"
+description: "Praias para cães em Espanha: como funcionam, as regiões com mais opções, onde ver a lista oficial atualizada e uma rota costeira de carrinha com dicas."
 pubDate: 2026-10-03
 author: "Marcos & Elena | Especialistas Outdoor"
 category: "rutas"

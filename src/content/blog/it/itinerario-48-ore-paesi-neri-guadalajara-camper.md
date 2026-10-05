@@ -1,6 +1,7 @@
 ---
 title: "Itinerario di 48 Ore tra i Paesi Neri di Guadalajara in Camper"
-description: "Itinerario completo per un weekend in una delle zone più autentiche della Sierra de Ayllón: architettura in ardesia, pozze cristalline, coordinate per la sosta notturna e gastronomia locale."
+seoTitle: "Paesi Neri di Guadalajara in Camper: Itinerario di 48 Ore"
+description: "Itinerario di un weekend in camper tra i Paesi Neri della Sierra de Ayllón: architettura in ardesia, pozze cristalline, coordinate per la notte e gastronomia."
 pubDate: 2026-03-29
 author: "Marcos & Elena | Esperti Outdoor"
 category: "rutas"

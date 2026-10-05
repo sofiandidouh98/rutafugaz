@@ -1,5 +1,6 @@
 ---
-import { categoryKeys, categoryPath, defaultLang, homePath, t, type Lang } from '../i18n/ui';
+import { categoryKeys, categoryPath, defaultLang, homePath, langPrefix, t, type Lang } from '../i18n/ui';
+import { extraUi } from '../i18n/extra';
 
 interface Props {
   lang?: Lang;
@@ -36,6 +37,7 @@ const currentYear = new Date().getFullYear();
         {strings.footer.categories}
       </h4>
       <ul class="space-y-2 text-xs">
+        <li><a href={`${langPrefix(lang)}/blog`} class="hover:text-emerald-400 transition">{extraUi[lang].blogHeading}</a></li>
         {categoryKeys.map((cat) => (
           <li><a href={categoryPath(lang, cat)} class="hover:text-emerald-400 transition">{strings.categories[cat].name}</a></li>
         ))}

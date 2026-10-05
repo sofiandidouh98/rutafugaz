@@ -1,5 +1,6 @@
 ---
 title: "Como Camperizar uma Carrinha Pequena por Menos de 500 € (Berlingo, Rifter, Caddy)"
+seoTitle: "Camperizar uma Carrinha Pequena por Menos de 500 €"
 description: "Guia passo a passo para transformar uma carrinha compacta numa mini camper funcional e confortável, sem homologações e sem ires à falência."
 pubDate: 2026-03-22
 author: "Marcos & Elena | Especialistas Outdoor"

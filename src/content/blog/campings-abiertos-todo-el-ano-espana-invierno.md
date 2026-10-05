@@ -1,5 +1,6 @@
 ---
 title: "Campings Abiertos Todo el Año en España: Guía para Viajar en Camper en Invierno"
+seoTitle: "Campings Abiertos Todo el Año en España: Camper en Invierno"
 description: "Las mejores zonas de España para viajar en camper en invierno, cómo funciona el descuento ACSI, qué revisar al reservar y cómo preparar la furgo para el frío."
 pubDate: 2026-09-22
 author: "Marcos & Elena | Especialistas Outdoor"

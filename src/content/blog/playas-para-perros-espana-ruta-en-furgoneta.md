@@ -1,6 +1,7 @@
 ---
 title: "Playas para Perros en España: Ruta en Furgoneta por la Costa con tu Mejor Amigo"
-description: "Cómo funcionan las playas caninas en España, qué regiones tienen más opciones, dónde consultar la lista oficial y una ruta en furgoneta con consejos para tu perro."
+seoTitle: "Playas para Perros en España: Ruta en Furgoneta por la Costa"
+description: "Playas para perros en España: cómo funcionan, qué regiones tienen más, dónde ver la lista oficial y una ruta en furgoneta con consejos para tu perro."
 pubDate: 2026-10-03
 author: "Marcos & Elena | Especialistas Outdoor"
 category: "rutas"

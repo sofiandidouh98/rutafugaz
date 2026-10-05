@@ -1,6 +1,7 @@
 ---
 title: "Autocaravana, Camper o Caravana: ¿Cuál Elegir? (Comparativa Completa)"
-description: "Comparamos autocaravana, furgoneta camper y caravana: precio nuevo y usado, conducción, carnet, consumo, confort, peajes y reventa. Descubre cuál encaja contigo."
+seoTitle: "Autocaravana, Camper o Caravana: Cuál Elegir y Por Qué"
+description: "Autocaravana, camper o caravana: comparamos precio nuevo y usado, conducción, carnet, consumo, confort, peajes y reventa. Descubre cuál encaja contigo."
 pubDate: 2026-09-29
 author: "Marcos & Elena | Especialistas Outdoor"
 category: "camper"

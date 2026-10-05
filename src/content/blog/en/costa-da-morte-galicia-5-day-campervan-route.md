@@ -1,6 +1,7 @@
 ---
 title: "5-Day Campervan Route Along the Costa da Morte: Malpica to Carnota"
-description: "A 5-day van itinerary along Galicia's Costa da Morte: Malpica, Camariñas, Muxía, Fisterra, Ézaro and Carnota. Where to sleep, the Coastal Law, weather and food."
+seoTitle: "Costa da Morte Campervan Route: 5-Day Galicia Itinerary"
+description: "Costa da Morte campervan route: 5 days from Malpica to Carnota via Camariñas, Muxía, Fisterra and Ézaro. Where to sleep, the Coastal Law, weather and food."
 pubDate: 2026-09-15
 author: "Marcos & Elena | Outdoor Specialists"
 category: "rutas"

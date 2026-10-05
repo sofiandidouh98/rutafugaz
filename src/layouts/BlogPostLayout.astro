@@ -5,6 +5,9 @@ import AuthorBox from '../components/AuthorBox.astro';
 import AffiliateDisclaimer from '../components/AffiliateDisclaimer.astro';
 import ShareButtons from '../components/ShareButtons.astro';
 import NewsletterBox from '../components/NewsletterBox.astro';
+import PostCard from '../components/PostCard.astro';
+import { getPostsByLang } from '../i18n/posts';
+import { extraUi } from '../i18n/extra';
 import { siteConfig } from '../config/site';
 import { categoryPath, homePath, languages, postLang, t, type Lang } from '../i18n/ui';
 
@@ -14,6 +17,7 @@ interface Props {
     slug?: string;
     data: {
       title: string;
+      seoTitle?: string;
       description: string;
       pubDate: Date;
       updatedDate?: Date;
@@ -28,7 +32,7 @@ interface Props {
 }
 
 const { post, alternates } = Astro.props;
-const { title, description, pubDate, updatedDate, author, category, heroImage, readTime, tags } = post.data;
+const { title, seoTitle, description, pubDate, updatedDate, author, category, heroImage, readTime, tags } = post.data;
 
 const lang = postLang(post.id);
 const strings = t(lang);
@@ -40,7 +44,24 @@ const formattedDate = new Intl.DateTimeFormat(languages[lang].dateLocale, {
   day: 'numeric'
 }).format(pubDate);
 
-const articleUrl = Astro.url.href;
+const articleUrl = new URL(Astro.url.pathname.replace(/\/+$/, ''), siteConfig.url).href;
+
+// Artículos relacionados: primero los de la misma categoría, luego los más recientes
+const otherPosts = (await getPostsByLang(lang)).filter((p) => p.id !== post.id);
+const relatedPosts = [
+  ...otherPosts.filter((p) => p.data.category === category),
+  ...otherPosts.filter((p) => p.data.category !== category),
+].slice(0, 3);
+
+const schemaBreadcrumb = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": strings.post.home, "item": new URL(homePath(lang), siteConfig.url).href },
+    { "@type": "ListItem", "position": 2, "name": categoryLabels[category], "item": new URL(categoryPath(lang, category), siteConfig.url).href },
+    { "@type": "ListItem", "position": 3, "name": title, "item": articleUrl }
+  ]
+};
 
 // JSON-LD Schema for BlogPosting (Crucial for Google Discover and News indexing)
 const schemaArticle = {
@@ -73,15 +94,18 @@ const schemaArticle = {
 ---
 
 <BaseLayout 
-  title={title} 
+  title={seoTitle ?? title} 
   description={description} 
   image={heroImage} 
   articleDate={pubDate} 
   articleAuthor={author}
+  articleSection={categoryLabels[category]}
+  articleModified={updatedDate}
   lang={lang}
   alternates={alternates}
 >
   <script type="application/ld+json" set:html={JSON.stringify(schemaArticle)} />
+  <script type="application/ld+json" set:html={JSON.stringify(schemaBreadcrumb)} />
 
   <article class="max-w-4xl mx-auto px-4 sm:px-6 pt-8 pb-16">
     <!-- Breadcrumbs -->
@@ -135,7 +159,9 @@ const schemaArticle = {
     <!-- Imagen Principal con Relación de Aspecto Optimizada para Google Discover (16:9) -->
     <div class="rounded-2xl overflow-hidden shadow-lg mb-8 border border-stone-200">
       <img 
-        src={heroImage} 
+        src={heroImage}
+        width="1200"
+        height="675"
         alt={title} 
         class="w-full h-auto aspect-video object-cover" 
         loading="eager"
@@ -178,6 +204,16 @@ const schemaArticle = {
 
     <!-- Caja de Autor (E-E-A-T) -->
     <AuthorBox author={author} lang={lang} />
+
+    <!-- Artículos relacionados (enlazado interno) -->
+    {relatedPosts.length > 0 && (
+      <section class="mt-12">
+        <h2 class="text-2xl font-extrabold text-stone-900 tracking-tight mb-6">{extraUi[lang].related}</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+          {relatedPosts.map((p) => <PostCard post={p} />)}
+        </div>
+      </section>
+    )}
 
     <!-- Magnet Newsletter para fidelizar visitas -->
     <div id="boletin"><NewsletterBox lang={lang} /></div>

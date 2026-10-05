@@ -1,6 +1,7 @@
 ---
 title: "Plages pour Chiens en Espagne : Road Trip en Van sur la Côte avec votre Compagnon"
-description: "Comment fonctionnent les plages pour chiens en Espagne, les régions qui en ont le plus, où trouver la liste officielle à jour et un road trip en van avec conseils."
+seoTitle: "Plages pour chiens en Espagne : road trip en van sur la côte"
+description: "Plages pour chiens en Espagne : comment elles fonctionnent, les régions qui en ont le plus, la liste officielle à jour et un road trip en van avec conseils."
 pubDate: 2026-10-03
 author: "Marcos & Elena | Spécialistes Outdoor"
 category: "rutas"

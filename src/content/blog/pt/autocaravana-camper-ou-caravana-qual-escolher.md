@@ -1,6 +1,7 @@
 ---
 title: "Autocaravana, Camper ou Caravana: Qual Escolher? (Comparativo Completo)"
-description: "Comparamos autocaravana, carrinha camper e caravana: preço novo e usado, condução, carta, consumo, conforto, portagens e revenda. Descobre qual combina contigo."
+seoTitle: "Autocaravana, Camper ou Caravana: Qual Escolher e Porquê"
+description: "Autocaravana, camper ou caravana: comparamos preço novo e usado, condução, carta, consumo, conforto, portagens e revenda. Descobre qual combina contigo."
 pubDate: 2026-09-29
 author: "Marcos & Elena | Especialistas Outdoor"
 category: "camper"

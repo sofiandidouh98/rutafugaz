@@ -1,6 +1,7 @@
 ---
 title: "Camper-Route entlang der Costa da Morte in 5 Tagen: von Malpica bis Carnota"
-description: "5-Tage-Route im Camper entlang der Costa da Morte in Galicien: Malpica, Camariñas, Muxía, Fisterra, Ézaro und Carnota. Übernachten, Küstengesetz, Wetter, Küche."
+seoTitle: "Costa da Morte mit dem Camper: 5-Tage-Route durch Galicien"
+description: "5-Tage-Camper-Route an der Costa da Morte in Galicien: Malpica, Camariñas, Muxía, Fisterra, Ézaro und Carnota. Übernachten, Küstengesetz und Wetter."
 pubDate: 2026-09-15
 author: "Marcos & Elena | Outdoor-Experten"
 category: "rutas"

@@ -1,6 +1,7 @@
 ---
 title: "Louer un Camping-Car pour la Première Fois : Guide Complet (Permis, Prix et Checklist)"
-description: "Tout ce qu'il faut savoir avant de louer votre premier camping-car ou van aménagé en Espagne : permis, prix indicatifs, assurance, caution et checklist de départ."
+seoTitle: "Louer un camping-car en Espagne : guide de la première fois"
+description: "Louer un camping-car ou un van aménagé en Espagne pour la première fois : permis, prix indicatifs, assurance, caution et checklist de départ."
 pubDate: 2026-09-18
 author: "Marcos & Elena | Spécialistes Outdoor"
 category: "camper"

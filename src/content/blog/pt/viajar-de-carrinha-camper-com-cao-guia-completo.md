@@ -1,6 +1,7 @@
 ---
 title: "Viajar de Carrinha Camper com Cão: Guia Completo para Viagens Seguras e Felizes (2026)"
-description: "Tudo para viajares de carrinha camper com o teu cão: transporte seguro, documentação, perigo do calor, checklist, parques de campismo que aceitam cães e urgências."
+seoTitle: "Viajar de Carrinha Camper com Cão: Guia Completo 2026"
+description: "Viajar de carrinha camper com o teu cão: transporte seguro, documentação, perigo do calor, checklist, parques de campismo que aceitam cães e urgências."
 pubDate: 2026-09-25
 author: "Marcos & Elena | Especialistas Outdoor"
 category: "camper"

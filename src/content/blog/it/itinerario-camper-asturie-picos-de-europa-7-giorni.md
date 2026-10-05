@@ -1,5 +1,6 @@
 ---
 title: "Itinerario in Camper nelle Asturie e nei Picos de Europa in 7 Giorni"
+seoTitle: "Itinerario Camper Asturie e Picos de Europa in 7 Giorni"
 description: "Itinerario di 7 giorni in camper nelle Asturie: Covadonga, i laghi, il Cares, Bulnes, Llanes, Lastres e Cudillero. Dove dormire, regole del parco e consigli."
 pubDate: 2026-09-08
 author: "Marcos & Elena | Esperti Outdoor"

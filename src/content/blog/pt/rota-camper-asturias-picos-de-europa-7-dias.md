@@ -1,5 +1,6 @@
 ---
 title: "Rota de Carrinha Camper pelas Astúrias e Picos de Europa em 7 Dias"
+seoTitle: "Rota Camper pelas Astúrias e Picos de Europa em 7 Dias"
 description: "Roteiro de 7 dias de carrinha pelas Astúrias: Covadonga, os lagos, o Cares, Bulnes, Llanes, Lastres e Cudillero. Onde dormir, regras do parque e conselhos."
 pubDate: 2026-09-08
 author: "Marcos & Elena | Especialistas Outdoor"

@@ -1,6 +1,7 @@
 ---
 title: "Power Station Portatili per Camper: EcoFlow vs Bluetti (Confronto Reale 2026)"
-description: "Conviene comprare un generatore solare 'tutto in uno' invece di installare una batteria servizi con relè? Analizziamo capacità (Wh), chimica LiFePO4, velocità di ricarica e consumi reali."
+seoTitle: "Power Station per Camper: EcoFlow vs Bluetti, Confronto 2026"
+description: "Power station portatile o batteria servizi con relè? EcoFlow vs Bluetti per camper: capacità (Wh), chimica LiFePO4, velocità di ricarica e consumi reali."
 pubDate: 2026-04-05
 author: "Marcos & Elena | Esperti Outdoor"
 category: "equipamiento"

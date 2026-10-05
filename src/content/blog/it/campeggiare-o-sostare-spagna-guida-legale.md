@@ -1,6 +1,7 @@
 ---
 title: "Campeggiare o Sostare in Spagna: la Guida Legale Definitiva per Evitare le Multe (2026)"
-description: "Scopri esattamente cosa dice la legge spagnola sul dormire nel tuo furgone o camper. L'Istruzione 08/V-74 della DGT, gli errori più comuni e come difendere i tuoi diritti."
+seoTitle: "Campeggiare o Sostare in Spagna: Guida Legale e Multe 2026"
+description: "Campeggiare o sostare in Spagna: cosa dice la legge sul dormire in furgone o camper, l'Istruzione 08/V-74 della DGT, gli errori più comuni e i tuoi diritti."
 pubDate: 2026-03-15
 author: "Marcos & Elena | Esperti Outdoor"
 category: "pernocta"

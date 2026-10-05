@@ -2,7 +2,7 @@ export const siteConfig = {
   name: 'RutaFugaz',
   title: 'RutaFugaz | Micro-Aventuras, Furgonetas Camper & Turismo Rural',
   description: 'Descubre rutas secretas de fin de semana, guías de camperización económica, normativa legal de pernocta y comparativas de equipamiento outdoor para viajar libre.',
-  url: 'https://rutafugaz.site',
+  url: 'https://www.rutafugaz.site',
   author: 'Equipo RutaFugaz',
   locale: 'es_ES',
   categories: [

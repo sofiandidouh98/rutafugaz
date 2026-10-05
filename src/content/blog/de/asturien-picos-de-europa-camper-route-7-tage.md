@@ -1,5 +1,6 @@
 ---
 title: "Camper-Route durch Asturien und die Picos de Europa in 7 Tagen"
+seoTitle: "Camper-Route Asturien und Picos de Europa in 7 Tagen"
 description: "7-Tage-Route im Camper durch Asturien: Covadonga, die Seen, die Cares-Schlucht, Bulnes, Llanes, Lastres und Cudillero. Übernachten, Parkregeln und Fahrtipps."
 pubDate: 2026-09-08
 author: "Marcos & Elena | Outdoor-Experten"

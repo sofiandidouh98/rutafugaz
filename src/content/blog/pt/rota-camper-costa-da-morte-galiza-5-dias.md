@@ -1,6 +1,7 @@
 ---
 title: "Rota de Carrinha Camper pela Costa da Morte em 5 Dias: de Malpica a Carnota"
-description: "Roteiro de 5 dias de carrinha pela Costa da Morte, na Galiza: Malpica, Camariñas, Muxía, Fisterra, Ézaro e Carnota. Onde dormir, Lei de Costas, clima e comida."
+seoTitle: "Rota Camper pela Costa da Morte em 5 Dias: Malpica a Carnota"
+description: "Roteiro de 5 dias de carrinha pela Costa da Morte (Galiza): Malpica, Camariñas, Muxía, Fisterra, Ézaro e Carnota. Onde dormir, Lei de Costas, clima e comida."
 pubDate: 2026-09-15
 author: "Marcos & Elena | Especialistas Outdoor"
 category: "rutas"

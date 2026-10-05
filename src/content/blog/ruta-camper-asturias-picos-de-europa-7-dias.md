@@ -1,5 +1,6 @@
 ---
 title: "Ruta Camper por Asturias y Picos de Europa en 7 Días: Montaña y Costa"
+seoTitle: "Ruta Camper por Asturias y Picos de Europa en 7 Días"
 description: "Itinerario de 7 días en furgoneta por Asturias: Covadonga, lagos, el Cares, Bulnes, Llanes, Lastres y Cudillero. Dónde dormir, normas del Parque y consejos."
 pubDate: 2026-09-08
 author: "Marcos & Elena | Especialistas Outdoor"

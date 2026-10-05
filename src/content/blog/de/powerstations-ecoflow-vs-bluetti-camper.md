@@ -1,6 +1,7 @@
 ---
 title: "Tragbare Powerstations für den Camper: EcoFlow vs. Bluetti (Praxisvergleich 2026)"
-description: "Lohnt sich ein „All-in-One“-Solargenerator statt einer Zweitbatterie mit Trennrelais? Wir analysieren Kapazität (Wh), LiFePO4-Chemie, Ladegeschwindigkeit und realen Verbrauch."
+seoTitle: "Powerstation Camper: EcoFlow vs. Bluetti im Vergleich 2026"
+description: "Powerstation statt Zweitbatterie im Camper? EcoFlow vs. Bluetti im Vergleich: Kapazität (Wh), LiFePO4-Chemie, Ladegeschwindigkeit und realer Verbrauch."
 pubDate: 2026-04-05
 author: "Marcos & Elena | Outdoor-Experten"
 category: "equipamiento"

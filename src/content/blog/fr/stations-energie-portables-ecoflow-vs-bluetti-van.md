@@ -1,6 +1,7 @@
 ---
 title: "Stations d'Énergie Portables pour Van : EcoFlow vs Bluetti (Comparatif Réel 2026)"
-description: "Vaut-il mieux acheter un générateur solaire « tout-en-un » plutôt que d'installer une batterie auxiliaire avec coupleur ? Nous analysons la capacité (Wh), la chimie LiFePO4, la vitesse de charge et la consommation réelle."
+seoTitle: "EcoFlow vs Bluetti : quelle station d'énergie pour son van ?"
+description: "EcoFlow vs Bluetti pour van aménagé : station « tout-en-un » ou batterie auxiliaire avec coupleur ? Capacité, LiFePO4, recharge et consommation réelle."
 pubDate: 2026-04-05
 author: "Marcos & Elena | Spécialistes Outdoor"
 category: "equipamiento"

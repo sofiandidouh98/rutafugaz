@@ -1,6 +1,7 @@
 ---
 title: "Camping vs Overnight Parking in Spain: The Definitive Legal Guide to Avoid Fines (2026)"
-description: "Find out exactly what Spanish law says about sleeping in your van or motorhome. Learn about DGT Instruction 08/V-74, the most common mistakes and how to stand up for your rights."
+seoTitle: "Overnight Parking in Spain: Campervan Laws and Fines (2026)"
+description: "Overnight parking in Spain explained: what the law says about sleeping in your van or motorhome, DGT Instruction 08/V-74, common mistakes and your rights."
 pubDate: 2026-03-15
 author: "Marcos & Elena | Outdoor Specialists"
 category: "pernocta"

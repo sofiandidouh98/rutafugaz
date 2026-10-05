@@ -1,6 +1,7 @@
 ---
 title: "Campen oder Parken in Spanien: Der ultimative Rechtsratgeber gegen Bußgelder (2026)"
-description: "Erfahre genau, was das spanische Recht zum Schlafen im Van oder Wohnmobil sagt. Die DGT-Anweisung 08/V-74, die häufigsten Fehler und wie du deine Rechte verteidigst."
+seoTitle: "Wildcampen Spanien: Campen oder Parken? Rechtsratgeber 2026"
+description: "Campen oder Parken in Spanien: Was das Gesetz zum Schlafen im Van oder Wohnmobil sagt, die DGT-Anweisung 08/V-74, häufige Fehler und deine Rechte."
 pubDate: 2026-03-15
 author: "Marcos & Elena | Outdoor-Experten"
 category: "pernocta"
