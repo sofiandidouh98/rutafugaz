@@ -1,0 +1,4 @@
+# ads.txt para RutaFugaz
+# Cuando Google AdSense apruebe tu cuenta, reemplaza 'pub-XXXXXXXXXXXXXXXX' con tu ID de editor
+# Formato: google.com, pub-XXXXXXXXXXXXXXXX, DIRECT, f08c47fec0942fa0
+google.com, pub-XXXXXXXXXXXXXXXX, DIRECT, f08c47fec0942fa0

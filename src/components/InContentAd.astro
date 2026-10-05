@@ -1,0 +1,45 @@
+---
+import { siteConfig } from '../config/site';
+
+interface Props {
+  slotId?: string;
+  positionNumber?: number;
+}
+
+const { slotId = '9876543210', positionNumber = 1 } = Astro.props;
+const { ads } = siteConfig;
+---
+
+<aside class="my-10 not-prose border-y border-stone-200 py-6 bg-stone-50/70 rounded-2xl p-4 md:p-6 text-center shadow-xs">
+  <div class="flex items-center justify-between text-[11px] text-stone-600 mb-2 px-1">
+    <span class="uppercase tracking-widest font-mono font-medium">Publicidad Patrocinada</span>
+    <span class="text-stone-600 font-medium">Espacio #{positionNumber}</span>
+  </div>
+
+  <div class="w-full min-h-[250px] md:min-h-[280px] bg-white border border-stone-200 rounded-xl flex flex-col items-center justify-center p-4">
+    {ads.showPlaceholders ? (
+      <div class="space-y-2 text-stone-500 max-w-md">
+        <div class="w-10 h-10 mx-auto rounded-full bg-emerald-50 text-emerald-600 flex items-center justify-center font-bold text-sm">
+          AD
+        </div>
+        <p class="text-sm font-semibold text-stone-700">Anuncio Integrado en Contenido (In-Article Ad)</p>
+        <p class="text-xs text-stone-500">
+          Ubicación estratégica de alta atención: el 78% de los usuarios ven este bloque mientras leen el tutorial.
+        </p>
+        <p class="text-[11px] font-mono text-stone-400">Slot ID: {slotId}</p>
+      </div>
+    ) : (
+      <div>
+        <ins class="adsbygoogle"
+             style="display:block; text-align:center;"
+             data-ad-layout="in-article"
+             data-ad-format="fluid"
+             data-ad-client={ads.adSenseClientId}
+             data-ad-slot={slotId}></ins>
+        <script is:inline>
+          (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
+      </div>
+    )}
+  </div>
+</aside>

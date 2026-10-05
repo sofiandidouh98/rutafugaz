@@ -1,0 +1,32 @@
+---
+interface Props {
+  author?: string;
+  role?: string;
+}
+
+const { 
+  author = 'Marcos & Elena | Especialistas en Rutas Camper',
+  role = 'Viajeros independientes con más de 8 años camperizando vehículos y recorriendo la península ibérica.'
+} = Astro.props;
+---
+
+<div class="my-10 p-6 bg-stone-50 border border-stone-200 rounded-2xl flex flex-col sm:flex-row items-center sm:items-start gap-4 text-center sm:text-left shadow-xs">
+  <div class="relative shrink-0">
+    <div class="w-16 h-16 rounded-full bg-emerald-800 text-amber-200 flex items-center justify-center font-bold text-xl ring-4 ring-emerald-100 shadow-inner">
+      RF
+    </div>
+    <span class="absolute bottom-0 right-0 w-4 h-4 bg-emerald-500 border-2 border-white rounded-full" title="Autor verificado"></span>
+  </div>
+
+  <div class="space-y-1.5 flex-1">
+    <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-1">
+      <h3 class="font-bold text-stone-900 text-base">{author}</h3>
+      <span class="text-[11px] font-mono uppercase tracking-wider bg-emerald-100 text-emerald-800 px-2 py-0.5 rounded-full font-semibold">
+        Equipo Editorial
+      </span>
+    </div>
+    <p class="text-sm text-stone-600 leading-relaxed">
+      {role} Todas las rutas, parkings y esquemas eléctricos compartidos en este blog han sido contrastados sobre el terreno y con normativas oficiales de tráfico y medio ambiente.
+    </p>
+  </div>
+</div>

@@ -1,0 +1,69 @@
+---
+import { siteConfig } from '../config/site';
+
+const navItems = [
+  { href: '/rutas', label: 'Rutas & Escapadas' },
+  { href: '/camper', label: 'Guía Camper' },
+  { href: '/pernocta', label: 'Pernocta & Ley' },
+  { href: '/equipamiento', label: 'Equipamiento' },
+];
+---
+
+<header class="sticky top-0 z-40 bg-stone-900/95 backdrop-blur-md border-b border-stone-800 text-stone-100 shadow-md">
+  <div class="max-w-6xl mx-auto px-4 sm:px-6 h-16 flex items-center justify-between">
+    <!-- Logo -->
+    <a href="/" class="flex items-center gap-2.5 group">
+      <div class="w-10 h-10 rounded-xl bg-emerald-600 text-amber-200 flex items-center justify-center font-bold text-xl group-hover:scale-105 transition shadow-md shadow-emerald-950/50">
+        🏕️
+      </div>
+      <div>
+        <span class="text-xl font-extrabold tracking-tight text-white group-hover:text-emerald-400 transition">
+          Ruta<span class="text-emerald-400">Fugaz</span>
+        </span>
+        <span class="hidden sm:block text-[10px] text-stone-400 font-mono tracking-widest uppercase -mt-1">
+          Camper & Micro-Aventuras
+        </span>
+      </div>
+    </a>
+
+    <!-- Desktop Navigation -->
+    <nav class="hidden md:flex items-center gap-1">
+      {navItems.map((item) => (
+        <a 
+          href={item.href}
+          class="px-3.5 py-1.5 text-sm font-medium text-stone-300 hover:text-white hover:bg-stone-800/80 rounded-lg transition"
+        >
+          {item.label}
+        </a>
+      ))}
+    </nav>
+
+    <!-- Right Side CTA / Badges -->
+    <div class="flex items-center gap-3">
+      <a 
+        href="/sobre-nosotros"
+        class="hidden sm:inline-flex items-center text-xs font-semibold px-3 py-1.5 bg-stone-800 hover:bg-stone-700 text-stone-300 rounded-lg transition border border-stone-700"
+      >
+        E-E-A-T Editorial
+      </a>
+      <a 
+        href="#boletin"
+        class="inline-flex items-center gap-1 text-xs font-bold px-3.5 py-1.5 bg-emerald-500 hover:bg-emerald-400 text-stone-950 rounded-lg transition shadow-xs"
+      >
+        <span>📍 Mapa Gratis</span>
+      </a>
+    </div>
+  </div>
+
+  <!-- Mobile Secondary Menu Bar -->
+  <div class="md:hidden overflow-x-auto flex items-center gap-2 px-4 py-2 border-t border-stone-800/60 bg-stone-950/80 text-xs no-scrollbar">
+    {navItems.map((item) => (
+      <a 
+        href={item.href}
+        class="shrink-0 px-2.5 py-1 text-stone-300 bg-stone-900 border border-stone-800 rounded-md active:bg-emerald-900/50"
+      >
+        {item.label}
+      </a>
+    ))}
+  </div>
+</header>

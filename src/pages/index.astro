@@ -1,0 +1,219 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import AdBanner from '../components/AdBanner.astro';
+import NewsletterBox from '../components/NewsletterBox.astro';
+import { siteConfig } from '../config/site';
+import { getCollection } from 'astro:content';
+
+const allPosts = await getCollection('blog');
+const sortedPosts = allPosts.sort((a, b) => b.data.pubDate.getTime() - a.data.pubDate.getTime());
+const featuredPosts = sortedPosts.filter(p => p.data.featured);
+const recentPosts = sortedPosts.slice(0, 6);
+
+const categoryIcons: Record<string, string> = {
+  rutas: '🗺️',
+  camper: '🛠️',
+  pernocta: '⚖️',
+  equipamiento: '⚡'
+};
+---
+
+<BaseLayout>
+  <!-- Hero Section -->
+  <section class="relative bg-stone-900 text-white overflow-hidden py-16 sm:py-24 border-b border-stone-800">
+    <div class="absolute inset-0 z-0 opacity-25 mix-blend-overlay">
+      <img 
+        src="https://images.unsplash.com/photo-1523987355523-c7b5b0dd90a7?auto=format&fit=crop&w=1800&q=80" 
+        alt="Furgoneta camper en la naturaleza al atardecer" 
+        class="w-full h-full object-cover" 
+      />
+    </div>
+
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 relative z-10 text-center sm:text-left">
+      <div class="max-w-2xl space-y-4">
+        <span class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-500/20 text-emerald-300 text-xs font-semibold tracking-wide border border-emerald-500/30">
+          🌲 Guía de Turismo Rural, Camper & Bricolaje
+        </span>
+        <h1 class="text-3xl sm:text-5xl md:text-6xl font-extrabold tracking-tight text-white leading-tight">
+          Viaja con libertad. <br class="hidden sm:inline" />
+          <span class="text-emerald-400">Sin multas ni agobios.</span>
+        </h1>
+        <p class="text-base sm:text-lg text-stone-300 leading-relaxed">
+          Itinerarios secretos de 48 horas, camperización low-cost paso a paso, análisis legal de pernocta y pruebas reales de equipamiento outdoor para tu furgoneta.
+        </p>
+
+        <div class="pt-2 flex flex-wrap gap-3 justify-center sm:justify-start">
+          <a 
+            href="/pernocta"
+            class="px-5 py-3 bg-emerald-500 hover:bg-emerald-400 text-stone-950 font-bold rounded-xl text-sm transition shadow-lg shadow-emerald-950/40"
+          >
+            Guía Legal de Pernocta →
+          </a>
+          <a 
+            href="/camper"
+            class="px-5 py-3 bg-stone-800 hover:bg-stone-700 text-stone-200 font-semibold rounded-xl text-sm transition border border-stone-700"
+          >
+            Camper por &lt;500 €
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contenedor Principal -->
+  <div class="max-w-6xl mx-auto px-4 sm:px-6 py-10 space-y-14">
+    <!-- Anuncio Superior de la Portada -->
+    <AdBanner slotId="home-leaderboard-top" format="horizontal" />
+
+    <!-- 4 Silos Temáticos (Categorías) -->
+    <section>
+      <div class="flex items-center justify-between mb-6">
+        <div>
+          <h2 class="text-2xl font-extrabold text-stone-900 tracking-tight">Explora por Temática</h2>
+          <p class="text-xs text-stone-500">Toda la información organizada en 4 áreas esenciales</p>
+        </div>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+        {siteConfig.categories.map((cat) => {
+          const count = allPosts.filter(p => p.data.category === cat.slug).length;
+          return (
+            <a 
+              href={`/${cat.slug}`} 
+              class="p-5 bg-white border border-stone-200 rounded-2xl shadow-xs hover:border-emerald-500 hover:shadow-md transition group flex flex-col justify-between"
+            >
+              <div>
+                <div class="w-12 h-12 rounded-xl bg-stone-100 flex items-center justify-center text-2xl group-hover:scale-110 transition duration-200 mb-3">
+                  {categoryIcons[cat.slug] || '📌'}
+                </div>
+                <h3 class="font-bold text-stone-900 group-hover:text-emerald-700 transition text-base">
+                  {cat.name}
+                </h3>
+                <p class="mt-1 text-xs text-stone-500 line-clamp-2 leading-relaxed">
+                  {cat.description}
+                </p>
+              </div>
+              <div class="mt-4 pt-3 border-t border-stone-100 flex items-center justify-between text-xs font-mono text-stone-400">
+                <span>{count} guías</span>
+                <span class="text-emerald-600 font-semibold group-hover:translate-x-1 transition">Ver más →</span>
+              </div>
+            </a>
+          );
+        })}
+      </div>
+    </section>
+
+    <!-- Artículos Destacados (Pillars) -->
+    <section>
+      <div class="mb-6">
+        <span class="text-xs font-bold font-mono uppercase tracking-wider text-emerald-700">Imprescindibles</span>
+        <h2 class="text-2xl sm:text-3xl font-extrabold text-stone-900 tracking-tight">Guías Pilares Recomendadas</h2>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        {featuredPosts.map((post) => (
+          <article class="bg-white border border-stone-200 rounded-2xl overflow-hidden shadow-xs hover:shadow-lg transition flex flex-col group">
+            <a href={`/blog/${post.id}`} class="overflow-hidden aspect-video block relative">
+              <img 
+                src={post.data.heroImage} 
+                alt={post.data.title}
+                class="w-full h-full object-cover group-hover:scale-105 transition duration-300"
+                loading="lazy"
+              />
+              <span class="absolute top-3 left-3 bg-stone-900/80 backdrop-blur-md text-amber-200 text-[10px] font-bold uppercase tracking-wider px-2.5 py-1 rounded-md">
+                Destacado
+              </span>
+            </a>
+            <div class="p-5 flex-1 flex flex-col justify-between">
+              <div>
+                <div class="flex items-center gap-2 text-xs text-stone-500 mb-2 font-mono">
+                  <span>⏱️ {post.data.readTime}</span>
+                </div>
+                <h3 class="text-base font-bold text-stone-900 group-hover:text-emerald-700 transition leading-snug">
+                  <a href={`/blog/${post.id}`}>
+                    {post.data.title}
+                  </a>
+                </h3>
+                <p class="mt-2 text-xs text-stone-600 line-clamp-2 leading-relaxed">
+                  {post.data.description}
+                </p>
+              </div>
+              <a 
+                href={`/blog/${post.id}`}
+                class="mt-4 text-xs font-bold text-emerald-700 hover:text-emerald-900 flex items-center gap-1"
+              >
+                Leer guía completa <span>→</span>
+              </a>
+            </div>
+          </article>
+        ))}
+      </div>
+    </section>
+
+    <!-- Caja de Suscripción Lead Magnet -->
+    <div id="boletin">
+      <NewsletterBox />
+    </div>
+
+    <!-- Anuncio Intermedio de Alto Rendimiento -->
+    <AdBanner slotId="home-mid-slot" format="horizontal" />
+
+    <!-- Todos los Artículos Recientes -->
+    <section>
+      <div class="mb-6">
+        <h2 class="text-2xl font-extrabold text-stone-900 tracking-tight">Últimas Publicaciones</h2>
+        <p class="text-xs text-stone-500">Actualizaciones recientes de rutas, leyes y reviews de campo</p>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        {recentPosts.map((post) => (
+          <article class="bg-white border border-stone-200 rounded-2xl overflow-hidden shadow-xs hover:shadow-md transition flex flex-col group">
+            <a href={`/blog/${post.id}`} class="overflow-hidden aspect-video block">
+              <img 
+                src={post.data.heroImage} 
+                alt={post.data.title}
+                class="w-full h-full object-cover group-hover:scale-105 transition duration-300"
+                loading="lazy"
+              />
+            </a>
+            <div class="p-5 flex-1 flex flex-col justify-between">
+              <div>
+                <span class="text-[10px] font-mono uppercase tracking-wider text-emerald-800 bg-emerald-50 px-2 py-0.5 rounded-sm font-semibold">
+                  {post.data.category}
+                </span>
+                <h3 class="mt-2 text-sm font-bold text-stone-900 group-hover:text-emerald-700 transition leading-snug">
+                  <a href={`/blog/${post.id}`}>
+                    {post.data.title}
+                  </a>
+                </h3>
+              </div>
+              <div class="mt-4 pt-3 border-t border-stone-100 flex items-center justify-between text-[11px] text-stone-500">
+                <span>{post.data.readTime}</span>
+                <span class="text-emerald-700 font-semibold group-hover:underline">Leer →</span>
+              </div>
+            </div>
+          </article>
+        ))}
+      </div>
+    </section>
+
+    <!-- Sección de Confianza y Autoridad (E-E-A-T) -->
+    <section class="p-8 bg-stone-100 border border-stone-200 rounded-3xl grid grid-cols-1 md:grid-cols-3 gap-6 text-center">
+      <div class="space-y-1.5">
+        <div class="text-3xl">🚐</div>
+        <h4 class="font-bold text-stone-900 text-sm">Experiencia Real de Campo</h4>
+        <p class="text-xs text-stone-600">Rutas recorridas en persona y coordenadas verificadas sobre el asfalto.</p>
+      </div>
+      <div class="space-y-1.5">
+        <div class="text-3xl">📜</div>
+        <h4 class="font-bold text-stone-900 text-sm">Rigor Jurídico Actualizado</h4>
+        <p class="text-xs text-stone-600">Instrucciones de la DGT y sentencias judiciales analizadas punto por punto.</p>
+      </div>
+      <div class="space-y-1.5">
+        <div class="text-3xl">🤝</div>
+        <h4 class="font-bold text-stone-900 text-sm">100% Independiente</h4>
+        <p class="text-xs text-stone-600">Sin intereses ocultos. Recomendamos solo lo que realmente funciona.</p>
+      </div>
+    </section>
+  </div>
+</BaseLayout>

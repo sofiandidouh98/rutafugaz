@@ -1,0 +1,70 @@
+---
+import { siteConfig } from '../config/site';
+
+const currentYear = new Date().getFullYear();
+---
+
+<footer class="bg-stone-950 text-stone-400 border-t border-stone-800 pt-16 pb-28 md:pb-20 text-sm">
+  <div class="max-w-6xl mx-auto px-4 sm:px-6 grid grid-cols-1 md:grid-cols-4 gap-10">
+    <!-- Columna 1: Brand & Misión -->
+    <div class="md:col-span-1 space-y-4">
+      <div class="flex items-center gap-2">
+        <span class="text-2xl">🏕️</span>
+        <span class="text-lg font-bold text-white tracking-tight">RutaFugaz</span>
+      </div>
+      <p class="text-xs text-stone-400 leading-relaxed">
+        El portal de referencia para amantes de las furgonetas camper, el turismo rural y las micro-aventuras sostenibles. Información contrastada para viajar con libertad y respeto.
+      </p>
+      <div class="pt-2 text-xs text-stone-500 font-mono">
+        Made with ❤️ for outdoor lovers.
+      </div>
+    </div>
+
+    <!-- Columna 2: Silos Temáticos -->
+    <div>
+      <h4 class="text-xs font-bold text-stone-200 uppercase tracking-wider mb-3 font-mono">
+        Categorías
+      </h4>
+      <ul class="space-y-2 text-xs">
+        <li><a href="/rutas" class="hover:text-emerald-400 transition">Rutas & Escapadas</a></li>
+        <li><a href="/camper" class="hover:text-emerald-400 transition">Guía de Camperización</a></li>
+        <li><a href="/pernocta" class="hover:text-emerald-400 transition">Pernocta Legal & Multas</a></li>
+        <li><a href="/equipamiento" class="hover:text-emerald-400 transition">Equipamiento Outdoor</a></li>
+      </ul>
+    </div>
+
+    <!-- Columna 3: Información & Autoridad -->
+    <div>
+      <h4 class="text-xs font-bold text-stone-200 uppercase tracking-wider mb-3 font-mono">
+        Proyecto & Contacto
+      </h4>
+      <ul class="space-y-2 text-xs">
+        <li><a href="/sobre-nosotros" class="hover:text-emerald-400 transition">Sobre Nosotros (Equipo Editorial)</a></li>
+        <li><a href="/contacto" class="hover:text-emerald-400 transition">Contacto & Publicidad</a></li>
+        <li><a href="/#boletin" class="hover:text-emerald-400 transition">Mapa Interactivo Gratuito</a></li>
+        <li><a href="/sitemap-index.xml" class="hover:text-emerald-400 transition">Mapa del Sitio (Sitemap XML)</a></li>
+      </ul>
+    </div>
+
+    <!-- Columna 4: Legal & Transparencia (Requerido por Google AdSense) -->
+    <div>
+      <h4 class="text-xs font-bold text-stone-200 uppercase tracking-wider mb-3 font-mono">
+        Cumplimiento Legal
+      </h4>
+      <ul class="space-y-2 text-xs">
+        <li><a href="/aviso-legal" class="hover:text-emerald-400 transition">Aviso Legal (LSSI-CE)</a></li>
+        <li><a href="/politica-de-privacidad" class="hover:text-emerald-400 transition">Política de Privacidad (RGPD)</a></li>
+        <li><a href="/politica-de-cookies" class="hover:text-emerald-400 transition">Política de Cookies</a></li>
+      </ul>
+      <p class="mt-4 text-[11px] text-stone-500 leading-tight">
+        Este sitio web monetiza a través de redes publicitarias display y enlaces de afiliación bajo estándares de transparencia.
+      </p>
+    </div>
+  </div>
+
+  <!-- Bottom Bar -->
+  <div class="max-w-6xl mx-auto px-4 sm:px-6 mt-12 pt-8 border-t border-stone-800/80 flex flex-col sm:flex-row items-center justify-between text-xs text-stone-500 gap-4">
+    <p>© {currentYear} RutaFugaz. Todos los derechos reservados.</p>
+    <p class="font-mono text-[11px]">Diseñado para máxima velocidad & Core Web Vitals 100/100</p>
+  </div>
+</footer>

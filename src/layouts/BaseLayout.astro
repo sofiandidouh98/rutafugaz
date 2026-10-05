@@ -1,0 +1,90 @@
+---
+import '../styles/global.css';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import StickyFooterAd from '../components/StickyFooterAd.astro';
+import { siteConfig } from '../config/site';
+
+interface Props {
+  title?: string;
+  description?: string;
+  image?: string;
+  canonicalUrl?: string;
+  articleDate?: Date;
+  articleAuthor?: string;
+  showStickyAd?: boolean;
+}
+
+const {
+  title = siteConfig.title,
+  description = siteConfig.description,
+  image = 'https://images.unsplash.com/photo-1523987355523-c7b5b0dd90a7?auto=format&fit=crop&w=1200&q=80',
+  canonicalUrl = Astro.url.href,
+  articleDate,
+  articleAuthor,
+  showStickyAd = true,
+} = Astro.props;
+
+const fullTitle = title.includes('RutaFugaz') ? title : `${title} | RutaFugaz`;
+---
+
+<!doctype html>
+<html lang="es" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="canonical" href={canonicalUrl} />
+    <meta name="generator" content={Astro.generator} />
+
+    <!-- SEO Básico -->
+    <title>{fullTitle}</title>
+    <meta name="description" content={description} />
+    <meta name="robots" content="index, follow" />
+
+    <!-- Open Graph / Facebook / Pinterest / Discover -->
+    <meta property="og:type" content={articleDate ? "article" : "website"} />
+    <meta property="og:url" content={canonicalUrl} />
+    <meta property="og:title" content={fullTitle} />
+    <meta property="og:description" content={description} />
+    <meta property="og:image" content={image} />
+    <meta property="og:site_name" content="RutaFugaz" />
+    <meta property="og:locale" content="es_ES" />
+
+    <!-- Twitter Cards -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={fullTitle} />
+    <meta name="twitter:description" content={description} />
+    <meta name="twitter:image" content={image} />
+
+    <!-- Google AdSense Script (Listo para producción) -->
+    {siteConfig.ads.enableAutoAds && (
+      <script 
+        async 
+        src={`https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${siteConfig.ads.adSenseClientId}`}
+        crossorigin="anonymous">
+      </script>
+    )}
+
+    <!-- JSON-LD Structured Data Schema -->
+    <script type="application/ld+json" set:html={JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "RutaFugaz",
+      "url": siteConfig.url,
+      "description": siteConfig.description,
+      "inLanguage": "es-ES"
+    })} />
+  </head>
+  <body class="bg-stone-50 text-stone-900 min-h-screen flex flex-col antialiased selection:bg-emerald-500 selection:text-white">
+    <Header />
+    
+    <main class="flex-1">
+      <slot />
+    </main>
+
+    <Footer />
+
+    {showStickyAd && <StickyFooterAd />}
+  </body>
+</html>
