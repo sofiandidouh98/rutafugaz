@@ -9,26 +9,18 @@ const { slotId = '5566778899' } = Astro.props;
 const { ads } = siteConfig;
 ---
 
-<div id="sticky-footer-ad" class="fixed bottom-0 inset-x-0 z-50 bg-white/95 backdrop-blur-md border-t border-stone-300 shadow-2xl p-2 transition-transform duration-300">
-  <div class="max-w-4xl mx-auto relative flex flex-col items-center">
-    <!-- Botón de Cerrar (Obligatorio para buena experiencia de usuario según Google) -->
-    <button 
-      id="close-sticky-ad" 
-      aria-label="Cerrar anuncio"
-      class="absolute -top-3.5 right-2 bg-stone-800 text-stone-200 text-xs rounded-full px-2.5 py-0.5 shadow hover:bg-stone-900 transition flex items-center gap-1 font-mono cursor-pointer"
-    >
-      <span>✕</span> <span class="text-[10px]">Cerrar</span>
-    </button>
+{ads.showAdSlots && (
+  <div id="sticky-footer-ad" class="fixed bottom-0 inset-x-0 z-50 bg-white/95 backdrop-blur-md border-t border-stone-300 shadow-2xl p-2 transition-transform duration-300">
+    <div class="max-w-4xl mx-auto relative flex flex-col items-center">
+      <button 
+        id="close-sticky-ad" 
+        aria-label="Cerrar anuncio"
+        class="absolute -top-3.5 right-2 bg-stone-800 text-stone-200 text-xs rounded-full px-2.5 py-0.5 shadow hover:bg-stone-900 transition flex items-center gap-1 font-mono cursor-pointer"
+      >
+        <span>✕</span> <span class="text-[10px]">Cerrar</span>
+      </button>
 
-    <span class="text-[9px] uppercase tracking-wider text-stone-600 mb-0.5 font-mono font-medium">Anuncio Anclado</span>
-
-    <div class="w-full max-h-[60px] md:max-h-[90px] flex items-center justify-center overflow-hidden">
-      {ads.showPlaceholders ? (
-        <div class="text-center py-1">
-          <p class="text-xs font-semibold text-stone-700">Sticky Bottom Ad (320x50 móvil / 728x90 ordenador)</p>
-          <p class="text-[10px] text-stone-500">Genera hasta un 40% del total de ingresos móviles por su alta visibilidad continua.</p>
-        </div>
-      ) : (
+      <div class="w-full max-h-[60px] md:max-h-[90px] flex items-center justify-center overflow-hidden">
         <ins class="adsbygoogle"
              style="display:inline-block;width:100%;height:60px"
              data-ad-client={ads.adSenseClientId}
@@ -36,17 +28,17 @@ const { ads } = siteConfig;
         <script is:inline>
           (adsbygoogle = window.adsbygoogle || []).push({});
         </script>
-      )}
+      </div>
     </div>
   </div>
-</div>
 
-<script is:inline>
-  const closeBtn = document.getElementById('close-sticky-ad');
-  const stickyAd = document.getElementById('sticky-footer-ad');
-  if (closeBtn && stickyAd) {
-    closeBtn.addEventListener('click', () => {
-      stickyAd.style.display = 'none';
-    });
-  }
-</script>
+  <script is:inline>
+    const closeBtn = document.getElementById('close-sticky-ad');
+    const stickyAd = document.getElementById('sticky-footer-ad');
+    if (closeBtn && stickyAd) {
+      closeBtn.addEventListener('click', () => {
+        stickyAd.style.display = 'none';
+      });
+    }
+  </script>
+)}

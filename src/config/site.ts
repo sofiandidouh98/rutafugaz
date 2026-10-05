@@ -2,7 +2,7 @@ export const siteConfig = {
   name: 'RutaFugaz',
   title: 'RutaFugaz | Micro-Aventuras, Furgonetas Camper & Turismo Rural',
   description: 'Descubre rutas secretas de fin de semana, guías de camperización económica, normativa legal de pernocta y comparativas de equipamiento outdoor para viajar libre.',
-  url: 'https://rutafugaz.es',
+  url: 'https://rutafugaz.site',
   author: 'Equipo RutaFugaz',
   locale: 'es_ES',
   categories: [
@@ -31,13 +31,10 @@ export const siteConfig = {
       badgeColor: 'bg-purple-100 text-purple-800'
     }
   ],
-  // Configuración de Monetización Publicitaria
+  // Configuración de Publicidad Oficial Google AdSense
   ads: {
-    // Pon en true para ver marcadores visuales mientras desarrollas; en false muestra el código real
-    showPlaceholders: false,
-    // Tu ID de editor de Google AdSense (ejemplo: 'ca-pub-XXXXXXXXXXXXXXXX')
-    adSenseClientId: 'ca-pub-XXXXXXXXXXXXXX',
-    // Si usas Ezoic o Mediavine, puedes activar sus scripts aquí
-    enableAutoAds: false,
+    showAdSlots: false,
+    adSenseClientId: 'ca-pub-3000101517969295',
+    enableAutoAds: true,
   }
 };

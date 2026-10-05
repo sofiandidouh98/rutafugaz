@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://rutafugaz.es/sitemap-index.xml
+Sitemap: https://rutafugaz.site/sitemap-index.xml
