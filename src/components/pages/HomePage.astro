@@ -1,0 +1,219 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import AdBanner from '../AdBanner.astro';
+import NewsletterBox from '../NewsletterBox.astro';
+import { getPostsByLang, homeAlternates } from '../../i18n/posts';
+import { categoryColors, categoryIcons, categoryKeys, categoryPath, postPath, t, type Lang } from '../../i18n/ui';
+
+interface Props {
+  lang: Lang;
+}
+
+const { lang } = Astro.props;
+const strings = t(lang);
+const h = strings.home;
+
+const sortedPosts = await getPostsByLang(lang);
+const featuredPosts = sortedPosts.filter(p => p.data.featured);
+const recentPosts = sortedPosts.slice(0, 6);
+---
+
+<BaseLayout lang={lang} alternates={homeAlternates()}>
+  <!-- Hero Section -->
+  <section class="relative bg-stone-900 text-white overflow-hidden py-16 sm:py-24 border-b border-stone-800">
+    <div class="absolute inset-0 z-0 opacity-25 mix-blend-overlay">
+      <img
+        src="https://images.unsplash.com/photo-1523987355523-c7b5b0dd90a7?auto=format&fit=crop&w=1800&q=80"
+        alt={h.heroImgAlt}
+        class="w-full h-full object-cover"
+      />
+    </div>
+
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 relative z-10 text-center sm:text-left">
+      <div class="max-w-2xl space-y-4">
+        <span class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-500/20 text-emerald-300 text-xs font-semibold tracking-wide border border-emerald-500/30">
+          {h.badge}
+        </span>
+        <h1 class="text-3xl sm:text-5xl md:text-6xl font-extrabold tracking-tight text-white leading-tight">
+          {h.h1a} <br class="hidden sm:inline" />
+          <span class="text-emerald-400">{h.h1b}</span>
+        </h1>
+        <p class="text-base sm:text-lg text-stone-300 leading-relaxed">
+          {h.lead}
+        </p>
+
+        <div class="pt-2 flex flex-wrap gap-3 justify-center sm:justify-start">
+          <a
+            href={categoryPath(lang, 'pernocta')}
+            class="px-5 py-3 bg-emerald-500 hover:bg-emerald-400 text-stone-950 font-bold rounded-xl text-sm transition shadow-lg shadow-emerald-950/40"
+          >
+            {h.ctaLegal}
+          </a>
+          <a
+            href={categoryPath(lang, 'camper')}
+            class="px-5 py-3 bg-stone-800 hover:bg-stone-700 text-stone-200 font-semibold rounded-xl text-sm transition border border-stone-700"
+          >
+            {h.ctaCamper}
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contenedor Principal -->
+  <div class="max-w-6xl mx-auto px-4 sm:px-6 py-10 space-y-14">
+    <!-- Anuncio Superior de la Portada -->
+    <AdBanner slotId="home-leaderboard-top" format="horizontal" />
+
+    <!-- 4 Silos Temáticos (Categorías) -->
+    <section>
+      <div class="flex items-center justify-between mb-6">
+        <div>
+          <h2 class="text-2xl font-extrabold text-stone-900 tracking-tight">{h.exploreTitle}</h2>
+          <p class="text-xs text-stone-500">{h.exploreSub}</p>
+        </div>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+        {categoryKeys.map((cat) => {
+          const count = sortedPosts.filter(p => p.data.category === cat).length;
+          return (
+            <a
+              href={categoryPath(lang, cat)}
+              class="p-5 bg-white border border-stone-200 rounded-2xl shadow-xs hover:border-emerald-500 hover:shadow-md transition group flex flex-col justify-between"
+            >
+              <div>
+                <div class="w-12 h-12 rounded-xl bg-stone-100 flex items-center justify-center text-2xl group-hover:scale-110 transition duration-200 mb-3">
+                  {categoryIcons[cat]}
+                </div>
+                <h3 class="font-bold text-stone-900 group-hover:text-emerald-700 transition text-base">
+                  {strings.categories[cat].name}
+                </h3>
+                <p class="mt-1 text-xs text-stone-500 line-clamp-2 leading-relaxed">
+                  {strings.categories[cat].description}
+                </p>
+              </div>
+              <div class="mt-4 pt-3 border-t border-stone-100 flex items-center justify-between text-xs font-mono text-stone-400">
+                <span>{count} {h.guides}</span>
+                <span class="text-emerald-600 font-semibold group-hover:translate-x-1 transition">{h.seeMore}</span>
+              </div>
+            </a>
+          );
+        })}
+      </div>
+    </section>
+
+    <!-- Artículos Destacados (Pillars) -->
+    <section>
+      <div class="mb-6">
+        <span class="text-xs font-bold font-mono uppercase tracking-wider text-emerald-700">{h.mustRead}</span>
+        <h2 class="text-2xl sm:text-3xl font-extrabold text-stone-900 tracking-tight">{h.pillarTitle}</h2>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        {featuredPosts.map((post) => (
+          <article class="bg-white border border-stone-200 rounded-2xl overflow-hidden shadow-xs hover:shadow-lg transition flex flex-col group">
+            <a href={postPath(post.id)} class="overflow-hidden aspect-video block relative">
+              <img
+                src={post.data.heroImage}
+                alt={post.data.title}
+                class="w-full h-full object-cover group-hover:scale-105 transition duration-300"
+                loading="lazy"
+              />
+              <span class="absolute top-3 left-3 bg-stone-900/80 backdrop-blur-md text-amber-200 text-[10px] font-bold uppercase tracking-wider px-2.5 py-1 rounded-md">
+                {h.featured}
+              </span>
+            </a>
+            <div class="p-5 flex-1 flex flex-col justify-between">
+              <div>
+                <div class="flex items-center gap-2 text-xs text-stone-500 mb-2 font-mono">
+                  <span>⏱️ {post.data.readTime}</span>
+                </div>
+                <h3 class="text-base font-bold text-stone-900 group-hover:text-emerald-700 transition leading-snug">
+                  <a href={postPath(post.id)}>
+                    {post.data.title}
+                  </a>
+                </h3>
+                <p class="mt-2 text-xs text-stone-600 line-clamp-2 leading-relaxed">
+                  {post.data.description}
+                </p>
+              </div>
+              <a
+                href={postPath(post.id)}
+                class="mt-4 text-xs font-bold text-emerald-700 hover:text-emerald-900 flex items-center gap-1"
+              >
+                {h.readFull} <span>→</span>
+              </a>
+            </div>
+          </article>
+        ))}
+      </div>
+    </section>
+
+    <!-- Caja de Suscripción Lead Magnet -->
+    <div id="boletin">
+      <NewsletterBox lang={lang} />
+    </div>
+
+    <!-- Anuncio Intermedio de Alto Rendimiento -->
+    <AdBanner slotId="home-mid-slot" format="horizontal" />
+
+    <!-- Todos los Artículos Recientes -->
+    <section>
+      <div class="mb-6">
+        <h2 class="text-2xl font-extrabold text-stone-900 tracking-tight">{h.latestTitle}</h2>
+        <p class="text-xs text-stone-500">{h.latestSub}</p>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        {recentPosts.map((post) => (
+          <article class="bg-white border border-stone-200 rounded-2xl overflow-hidden shadow-xs hover:shadow-md transition flex flex-col group">
+            <a href={postPath(post.id)} class="overflow-hidden aspect-video block">
+              <img
+                src={post.data.heroImage}
+                alt={post.data.title}
+                class="w-full h-full object-cover group-hover:scale-105 transition duration-300"
+                loading="lazy"
+              />
+            </a>
+            <div class="p-5 flex-1 flex flex-col justify-between">
+              <div>
+                <span class={`text-[10px] font-mono uppercase tracking-wider px-2 py-0.5 rounded-sm font-semibold ${categoryColors[post.data.category]}`}>
+                  {strings.nav[post.data.category]}
+                </span>
+                <h3 class="mt-2 text-sm font-bold text-stone-900 group-hover:text-emerald-700 transition leading-snug">
+                  <a href={postPath(post.id)}>
+                    {post.data.title}
+                  </a>
+                </h3>
+              </div>
+              <div class="mt-4 pt-3 border-t border-stone-100 flex items-center justify-between text-[11px] text-stone-500">
+                <span>{post.data.readTime}</span>
+                <span class="text-emerald-700 font-semibold group-hover:underline">{h.read}</span>
+              </div>
+            </div>
+          </article>
+        ))}
+      </div>
+    </section>
+
+    <!-- Sección de Confianza y Autoridad (E-E-A-T) -->
+    <section class="p-8 bg-stone-100 border border-stone-200 rounded-3xl grid grid-cols-1 md:grid-cols-3 gap-6 text-center">
+      <div class="space-y-1.5">
+        <div class="text-3xl">🚐</div>
+        <h4 class="font-bold text-stone-900 text-sm">{h.trust1t}</h4>
+        <p class="text-xs text-stone-600">{h.trust1d}</p>
+      </div>
+      <div class="space-y-1.5">
+        <div class="text-3xl">📜</div>
+        <h4 class="font-bold text-stone-900 text-sm">{h.trust2t}</h4>
+        <p class="text-xs text-stone-600">{h.trust2d}</p>
+      </div>
+      <div class="space-y-1.5">
+        <div class="text-3xl">🤝</div>
+        <h4 class="font-bold text-stone-900 text-sm">{h.trust3t}</h4>
+        <p class="text-xs text-stone-600">{h.trust3d}</p>
+      </div>
+    </section>
+  </div>
+</BaseLayout>

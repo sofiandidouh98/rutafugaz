@@ -1,35 +1,48 @@
 ---
+import { defaultLang, t, type Lang } from '../i18n/ui';
+
+interface Props {
+  lang?: Lang;
+}
+
+const { lang = defaultLang } = Astro.props;
+const strings = t(lang).newsletter;
 ---
 <div class="my-12 p-8 bg-gradient-to-br from-stone-900 via-stone-800 to-emerald-950 text-white rounded-3xl shadow-xl relative overflow-hidden">
   <div class="absolute -right-10 -bottom-10 w-48 h-48 bg-emerald-500/10 rounded-full blur-3xl pointer-events-none"></div>
 
   <div class="max-w-2xl relative z-10">
     <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-500/20 text-emerald-300 text-xs font-medium mb-3 border border-emerald-500/30">
-      <span>🎁 Regalo de Bienvenida</span>
+      <span>{strings.badge}</span>
     </div>
     <h3 class="text-2xl md:text-3xl font-extrabold text-stone-100 tracking-tight">
-      Mapa Secreto de Pernocta Legal en España (+150 Puntos)
+      {strings.title}
     </h3>
     <p class="mt-2 text-sm text-stone-300 leading-relaxed">
-      Suscríbete a nuestra newsletter semanal con micro-rutas sin aglomeraciones y recibe gratis el mapa interactivo para Google Maps con fuentes de agua potable, parkings tranquilos y calas solitarias.
+      {strings.text}
     </p>
 
-    <form class="mt-6 flex flex-col sm:flex-row gap-2.5 max-w-md" onsubmit="event.preventDefault(); alert('¡Gracias por unirte a RutaFugaz! Recibirás el mapa en tu bandeja de entrada.');">
+    <form 
+      class="mt-6 flex flex-col sm:flex-row gap-2.5 max-w-md" 
+      action="/gracias-mapa"
+      method="GET"
+    >
       <input 
         type="email" 
+        name="email"
         required 
-        placeholder="Tu correo electrónico..."
+        placeholder={strings.placeholder}
         class="px-4 py-3 bg-stone-800/90 border border-stone-700 rounded-xl text-stone-100 placeholder-stone-400 focus:outline-hidden focus:ring-2 focus:ring-emerald-400 text-sm flex-1"
       />
       <button 
         type="submit"
         class="px-6 py-3 bg-emerald-500 hover:bg-emerald-400 text-stone-950 font-bold rounded-xl text-sm transition shadow-lg shadow-emerald-950/40 cursor-pointer"
       >
-        Descargar Mapa
+        {strings.button}
       </button>
     </form>
     <p class="mt-2 text-[11px] text-stone-400">
-      Cero spam. Solo rutas de calidad cada jueves. Puedes darte de baja con 1 clic.
+      {strings.note}
     </p>
   </div>
 </div>

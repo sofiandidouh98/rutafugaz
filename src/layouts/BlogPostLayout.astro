@@ -6,6 +6,7 @@ import AffiliateDisclaimer from '../components/AffiliateDisclaimer.astro';
 import ShareButtons from '../components/ShareButtons.astro';
 import NewsletterBox from '../components/NewsletterBox.astro';
 import { siteConfig } from '../config/site';
+import { categoryPath, homePath, languages, postLang, t, type Lang } from '../i18n/ui';
 
 interface Props {
   post: {
@@ -23,19 +24,17 @@ interface Props {
       tags: string[];
     };
   };
+  alternates?: Partial<Record<Lang, string>>;
 }
 
-const { post } = Astro.props;
+const { post, alternates } = Astro.props;
 const { title, description, pubDate, updatedDate, author, category, heroImage, readTime, tags } = post.data;
 
-const categoryLabels: Record<string, string> = {
-  rutas: 'Rutas & Escapadas',
-  camper: 'Guía Camper',
-  pernocta: 'Pernocta & Ley',
-  equipamiento: 'Equipamiento Outdoor'
-};
+const lang = postLang(post.id);
+const strings = t(lang);
+const categoryLabels = strings.nav;
 
-const formattedDate = new Intl.DateTimeFormat('es-ES', {
+const formattedDate = new Intl.DateTimeFormat(languages[lang].dateLocale, {
   year: 'numeric',
   month: 'long',
   day: 'numeric'
@@ -49,6 +48,7 @@ const schemaArticle = {
   "@type": "BlogPosting",
   "headline": title,
   "description": description,
+  "inLanguage": languages[lang].dateLocale,
   "image": [heroImage],
   "datePublished": pubDate.toISOString(),
   "dateModified": (updatedDate || pubDate).toISOString(),
@@ -78,15 +78,17 @@ const schemaArticle = {
   image={heroImage} 
   articleDate={pubDate} 
   articleAuthor={author}
+  lang={lang}
+  alternates={alternates}
 >
   <script type="application/ld+json" set:html={JSON.stringify(schemaArticle)} />
 
   <article class="max-w-4xl mx-auto px-4 sm:px-6 pt-8 pb-16">
     <!-- Breadcrumbs -->
     <nav class="flex items-center gap-2 text-xs text-stone-500 mb-6 font-mono overflow-x-auto">
-      <a href="/" class="hover:text-emerald-700 transition">Inicio</a>
+      <a href={homePath(lang)} class="hover:text-emerald-700 transition">{strings.post.home}</a>
       <span>/</span>
-      <a href={`/${category}`} class="hover:text-emerald-700 transition capitalize">
+      <a href={categoryPath(lang, category)} class="hover:text-emerald-700 transition capitalize">
         {categoryLabels[category]}
       </a>
       <span>/</span>
@@ -102,7 +104,7 @@ const schemaArticle = {
         <span class="text-xs text-stone-500 font-medium">⏱️ {readTime}</span>
         <span class="text-xs text-stone-400">•</span>
         <time datetime={pubDate.toISOString()} class="text-xs text-stone-500">
-          Actualizado: {formattedDate}
+          {strings.post.updated}: {formattedDate}
         </time>
       </div>
 
@@ -122,11 +124,11 @@ const schemaArticle = {
           </div>
           <div>
             <p class="font-bold text-stone-900">{author}</p>
-            <p class="text-stone-500">Equipo Especialista Outdoor</p>
+            <p class="text-stone-500">{strings.post.team}</p>
           </div>
         </div>
 
-        <ShareButtons title={title} url={articleUrl} />
+        <ShareButtons title={title} url={articleUrl} lang={lang} />
       </div>
     </header>
 
@@ -145,7 +147,7 @@ const schemaArticle = {
     <AdBanner slotId="post-top-slot" format="horizontal" />
 
     <!-- Aviso de Afiliación Transparente -->
-    <AffiliateDisclaimer />
+    <AffiliateDisclaimer lang={lang} />
 
     <!-- Contenido Markdown Prosa -->
     <div class="prose prose-stone prose-emerald lg:prose-lg max-w-none 
@@ -165,7 +167,7 @@ const schemaArticle = {
     <!-- Tags del Artículo -->
     {tags.length > 0 && (
       <div class="mt-10 pt-6 border-t border-stone-200 flex flex-wrap items-center gap-2">
-        <span class="text-xs font-bold text-stone-500 uppercase tracking-wider">Etiquetas:</span>
+        <span class="text-xs font-bold text-stone-500 uppercase tracking-wider">{strings.post.tags}</span>
         {tags.map((tag) => (
           <span class="px-2.5 py-1 text-xs bg-stone-100 text-stone-700 rounded-md font-mono hover:bg-stone-200 transition">
             #{tag}
@@ -175,9 +177,9 @@ const schemaArticle = {
     )}
 
     <!-- Caja de Autor (E-E-A-T) -->
-    <AuthorBox author={author} />
+    <AuthorBox author={author} lang={lang} />
 
     <!-- Magnet Newsletter para fidelizar visitas -->
-    <NewsletterBox />
+    <div id="boletin"><NewsletterBox lang={lang} /></div>
   </article>
 </BaseLayout>

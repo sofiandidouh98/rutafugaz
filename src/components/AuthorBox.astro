@@ -1,12 +1,17 @@
 ---
+import { defaultLang, t, type Lang } from '../i18n/ui';
+
 interface Props {
   author?: string;
   role?: string;
+  lang?: Lang;
 }
 
+const { lang = defaultLang } = Astro.props;
+const strings = t(lang).post;
 const { 
   author = 'Marcos & Elena | Especialistas en Rutas Camper',
-  role = 'Viajeros independientes con más de 8 años camperizando vehículos y recorriendo la península ibérica.'
+  role = strings.authorRole
 } = Astro.props;
 ---
 
@@ -22,11 +27,11 @@ const {
     <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-1">
       <h3 class="font-bold text-stone-900 text-base">{author}</h3>
       <span class="text-[11px] font-mono uppercase tracking-wider bg-emerald-100 text-emerald-800 px-2 py-0.5 rounded-full font-semibold">
-        Equipo Editorial
+        {strings.authorBadge}
       </span>
     </div>
     <p class="text-sm text-stone-600 leading-relaxed">
-      {role} Todas las rutas, parkings y esquemas eléctricos compartidos en este blog han sido contrastados sobre el terreno y con normativas oficiales de tráfico y medio ambiente.
+      {role} {strings.authorText}
     </p>
   </div>
 </div>

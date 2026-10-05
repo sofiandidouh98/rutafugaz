@@ -4,6 +4,7 @@ import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 import StickyFooterAd from '../components/StickyFooterAd.astro';
 import { siteConfig } from '../config/site';
+import { defaultLang, languages, t, type Lang } from '../i18n/ui';
 
 interface Props {
   title?: string;
@@ -13,11 +14,17 @@ interface Props {
   articleDate?: Date;
   articleAuthor?: string;
   showStickyAd?: boolean;
+  lang?: Lang;
+  /** Ruta de esta misma página en cada idioma (para hreflang y el selector de idioma) */
+  alternates?: Partial<Record<Lang, string>>;
 }
 
+const { lang = defaultLang, alternates = {} } = Astro.props;
+const strings = t(lang);
+
 const {
-  title = siteConfig.title,
-  description = siteConfig.description,
+  title = strings.site.title,
+  description = strings.site.description,
   image = 'https://images.unsplash.com/photo-1523987355523-c7b5b0dd90a7?auto=format&fit=crop&w=1200&q=80',
   canonicalUrl = Astro.url.href,
   articleDate,
@@ -26,16 +33,26 @@ const {
 } = Astro.props;
 
 const fullTitle = title.includes('RutaFugaz') ? title : `${title} | RutaFugaz`;
+const langInfo = languages[lang];
+const alternateEntries = Object.entries(alternates) as [Lang, string][];
 ---
 
 <!doctype html>
-<html lang="es" class="scroll-smooth">
+<html lang={langInfo.htmlLang} class="scroll-smooth">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <link rel="canonical" href={canonicalUrl} />
     <meta name="generator" content={Astro.generator} />
+
+    <!-- Versiones en otros idiomas (hreflang) -->
+    {alternateEntries.map(([l, path]) => (
+      <link rel="alternate" hreflang={languages[l].htmlLang} href={new URL(path, siteConfig.url).href} />
+    ))}
+    {alternates[defaultLang] && (
+      <link rel="alternate" hreflang="x-default" href={new URL(alternates.en ?? alternates[defaultLang]!, siteConfig.url).href} />
+    )}
 
     <!-- SEO Básico -->
     <title>{fullTitle}</title>
@@ -49,7 +66,7 @@ const fullTitle = title.includes('RutaFugaz') ? title : `${title} | RutaFugaz`;
     <meta property="og:description" content={description} />
     <meta property="og:image" content={image} />
     <meta property="og:site_name" content="RutaFugaz" />
-    <meta property="og:locale" content="es_ES" />
+    <meta property="og:locale" content={langInfo.locale} />
 
     <!-- Twitter Cards -->
     <meta name="twitter:card" content="summary_large_image" />
@@ -72,19 +89,25 @@ const fullTitle = title.includes('RutaFugaz') ? title : `${title} | RutaFugaz`;
       "@type": "WebSite",
       "name": "RutaFugaz",
       "url": siteConfig.url,
-      "description": siteConfig.description,
-      "inLanguage": "es-ES"
+      "description": strings.site.description,
+      "inLanguage": langInfo.dateLocale
     })} />
   </head>
   <body class="bg-stone-50 text-stone-900 min-h-screen flex flex-col antialiased selection:bg-emerald-500 selection:text-white">
-    <Header />
+    <Header lang={lang} alternates={alternates} />
     
     <main class="flex-1">
       <slot />
     </main>
 
-    <Footer />
+    <Footer lang={lang} />
 
     {showStickyAd && <StickyFooterAd />}
+
+    <!-- Vercel Web Analytics -->
+    <script>
+      import { inject } from '@vercel/analytics';
+      inject();
+    </script>
   </body>
 </html>

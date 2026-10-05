@@ -1,13 +1,13 @@
 ---
 import { getCollection, render } from 'astro:content';
-import BlogPostLayout from '../../layouts/BlogPostLayout.astro';
-import { getPostAlternates } from '../../i18n/posts';
-import { defaultLang, postLang } from '../../i18n/ui';
+import BlogPostLayout from '../../../layouts/BlogPostLayout.astro';
+import { getPostAlternates } from '../../../i18n/posts';
+import { defaultLang, postLang, postSlug } from '../../../i18n/ui';
 
 export async function getStaticPaths() {
-  const posts = (await getCollection('blog')).filter((post) => postLang(post.id) === defaultLang);
+  const posts = (await getCollection('blog')).filter((post) => postLang(post.id) !== defaultLang);
   return Promise.all(posts.map(async (post) => ({
-    params: { slug: post.id },
+    params: { lang: postLang(post.id), slug: postSlug(post.id) },
     props: { post, alternates: await getPostAlternates(post) },
   })));
 }

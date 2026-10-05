@@ -1,0 +1,17 @@
+---
+import CategoryPage from '../../components/pages/CategoryPage.astro';
+import { categoryKeys, categorySlugs, translatedLangs } from '../../i18n/ui';
+
+export function getStaticPaths() {
+  return translatedLangs.flatMap((lang) =>
+    categoryKeys.map((category) => ({
+      params: { lang, category: categorySlugs[lang][category] },
+      props: { lang, category },
+    }))
+  );
+}
+
+const { lang, category } = Astro.props;
+---
+
+<CategoryPage lang={lang} category={category} />

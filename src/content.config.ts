@@ -14,6 +14,8 @@ const blog = defineCollection({
     readTime: z.string().default('5 min de lectura'),
     featured: z.boolean().default(false),
     tags: z.array(z.string()).default([]),
+    // Slug del artículo original en español (solo en traducciones, para enlazar idiomas)
+    translationKey: z.string().optional(),
   }),
 });
 
