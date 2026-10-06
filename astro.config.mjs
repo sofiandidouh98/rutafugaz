@@ -7,6 +7,8 @@ import sitemap from '@astrojs/sitemap';
 export default defineConfig({
   site: 'https://www.rutafugaz.site',
   trailingSlash: 'never',
+  // Cloudflare Pages sirve /pagina.html en /pagina, sin redirecciones
+  build: { format: 'file' },
   integrations: [
     sitemap({
       // Páginas sin valor para buscadores

@@ -1,13 +1,10 @@
-// Vercel Routing Middleware (Edge): redirige la portada al idioma del visitante según su país.
-// - Usa la cabecera x-vercel-ip-country que añade Vercel en cada petición.
+// Cloudflare Pages Function: redirige la portada al idioma del visitante según su país.
+// - Usa el país que Cloudflare adjunta a cada petición (request.cf.country).
 // - Países hispanohablantes se quedan en "/" (español, idioma por defecto).
 // - Países desconocidos o sin idioma propio → inglés.
 // - Si el usuario eligió idioma en el selector (cookie rf_lang), se respeta su elección.
 // - Los bots no se redirigen, para que Google indexe la versión española de "/".
-
-export const config = {
-  matcher: ['/'],
-};
+// - public/_routes.json limita esta función a la portada: el resto del sitio se sirve como estático.
 
 const SUPPORTED = ['es', 'en', 'fr', 'de', 'it', 'pt'];
 
@@ -36,22 +33,25 @@ function getCookie(request, name) {
   return match ? decodeURIComponent(match[1]) : null;
 }
 
-export default function middleware(request) {
+export async function onRequest(context) {
+  const { request } = context;
+  const url = new URL(request.url);
+  if (url.pathname !== '/') return context.next();
+
   const ua = request.headers.get('user-agent') || '';
-  if (BOT_UA.test(ua)) return;
+  if (BOT_UA.test(ua)) return context.next();
 
   const chosen = getCookie(request, 'rf_lang');
   let lang;
   if (chosen && SUPPORTED.includes(chosen)) {
     lang = chosen;
   } else {
-    const country = (request.headers.get('x-vercel-ip-country') || '').toUpperCase();
+    const country = (request.cf?.country || '').toUpperCase();
     lang = COUNTRY_LANG[country] || 'en';
   }
 
-  if (lang === 'es') return;
+  if (lang === 'es') return context.next();
 
-  const url = new URL(request.url);
   url.pathname = `/${lang}`;
   return new Response(null, {
     status: 307,

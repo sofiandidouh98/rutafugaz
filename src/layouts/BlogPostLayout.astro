@@ -44,7 +44,7 @@ const formattedDate = new Intl.DateTimeFormat(languages[lang].dateLocale, {
   day: 'numeric'
 }).format(pubDate);
 
-const articleUrl = new URL(Astro.url.pathname.replace(/\/+$/, ''), siteConfig.url).href;
+const articleUrl = new URL(Astro.url.pathname.replace(/(\/index)?\.html$/, '').replace(/\/+$/, ''), siteConfig.url).href;
 
 // Artículos relacionados: primero los de la misma categoría, luego los más recientes
 const otherPosts = (await getPostsByLang(lang)).filter((p) => p.id !== post.id);
